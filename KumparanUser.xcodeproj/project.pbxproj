@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */; };
-		9FC0F6BE2723ED4800231AC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BD2723ED4800231AC3 /* SceneDelegate.swift */; };
 		9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BF2723ED4800231AC3 /* ViewController.swift */; };
-		9FC0F6C32723ED4800231AC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC0F6C12723ED4800231AC3 /* Main.storyboard */; };
 		9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6C42723ED4800231AC3 /* KumparanUser.xcdatamodeld */; };
 		9FC0F6C82723ED4C00231AC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FC0F6C72723ED4C00231AC3 /* Assets.xcassets */; };
 		9FC0F6CB2723ED4C00231AC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FC0F6C92723ED4C00231AC3 /* LaunchScreen.storyboard */; };
@@ -39,9 +37,7 @@
 /* Begin PBXFileReference section */
 		9FC0F6B82723ED4800231AC3 /* KumparanUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumparanUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FC0F6BD2723ED4800231AC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9FC0F6BF2723ED4800231AC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9FC0F6C22723ED4800231AC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FC0F6C52723ED4800231AC3 /* KumparanUser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KumparanUser.xcdatamodel; sourceTree = "<group>"; };
 		9FC0F6C72723ED4C00231AC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FC0F6CA2723ED4C00231AC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,6 +77,7 @@
 		9FC0F6AF2723ED4800231AC3 = {
 			isa = PBXGroup;
 			children = (
+				9FC0F6EE2723F13300231AC3 /* Core */,
 				9FC0F6BA2723ED4800231AC3 /* KumparanUser */,
 				9FC0F6D42723ED4C00231AC3 /* KumparanUserTests */,
 				9FC0F6DE2723ED4C00231AC3 /* KumparanUserUITests */,
@@ -102,9 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */,
-				9FC0F6BD2723ED4800231AC3 /* SceneDelegate.swift */,
 				9FC0F6BF2723ED4800231AC3 /* ViewController.swift */,
-				9FC0F6C12723ED4800231AC3 /* Main.storyboard */,
 				9FC0F6C72723ED4C00231AC3 /* Assets.xcassets */,
 				9FC0F6C92723ED4C00231AC3 /* LaunchScreen.storyboard */,
 				9FC0F6CC2723ED4C00231AC3 /* Info.plist */,
@@ -128,6 +123,13 @@
 				9FC0F6E12723ED4C00231AC3 /* KumparanUserUITestsLaunchTests.swift */,
 			);
 			path = KumparanUserUITests;
+			sourceTree = "<group>";
+		};
+		9FC0F6EE2723F13300231AC3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +238,6 @@
 			files = (
 				9FC0F6CB2723ED4C00231AC3 /* LaunchScreen.storyboard in Resources */,
 				9FC0F6C82723ED4C00231AC3 /* Assets.xcassets in Resources */,
-				9FC0F6C32723ED4800231AC3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +264,6 @@
 			files = (
 				9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */,
 				9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */,
-				9FC0F6BE2723ED4800231AC3 /* SceneDelegate.swift in Sources */,
 				9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9FC0F6C12723ED4800231AC3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FC0F6C22723ED4800231AC3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9FC0F6C92723ED4C00231AC3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -371,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -426,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -446,6 +438,7 @@
 				DEVELOPMENT_TEAM = QNT26F7HW2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KumparanUser/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KSocial;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -474,6 +467,7 @@
 				DEVELOPMENT_TEAM = QNT26F7HW2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KumparanUser/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KSocial;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
