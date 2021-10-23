@@ -23,7 +23,7 @@ public protocol Coordinator: AnyObject {
         _ completion: (() -> Void)?
     )
 }
-open class SZCoordinator: Coordinator {
+open class SZCoordinator: NSObject, Coordinator {
     open var navigationController: UINavigationController = UINavigationController()
     
     public var childCoordinators = [Coordinator]()
@@ -33,7 +33,8 @@ open class SZCoordinator: Coordinator {
     public var resultCode: Int = CoordinatorResult.CANCEL
     public var resultData: String?
     
-    public init() {
+    public override init() {
+        super.init()
         self.setupBinding()
     }
 

@@ -15,6 +15,10 @@
 		9FC0F6D62723ED4C00231AC3 /* KumparanUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6D52723ED4C00231AC3 /* KumparanUserTests.swift */; };
 		9FC0F6E02723ED4C00231AC3 /* KumparanUserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6DF2723ED4C00231AC3 /* KumparanUserUITests.swift */; };
 		9FC0F6E22723ED4C00231AC3 /* KumparanUserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6E12723ED4C00231AC3 /* KumparanUserUITestsLaunchTests.swift */; };
+		9FC0F6F42723F84500231AC3 /* SZCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6F32723F84500231AC3 /* SZCoordinator.swift */; };
+		9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6F52723F85900231AC3 /* SZViewController.swift */; };
+		9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6F72723F86E00231AC3 /* SZViewModel.swift */; };
+		9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		9FC0F6DB2723ED4C00231AC3 /* KumparanUserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KumparanUserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC0F6DF2723ED4C00231AC3 /* KumparanUserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KumparanUserUITests.swift; sourceTree = "<group>"; };
 		9FC0F6E12723ED4C00231AC3 /* KumparanUserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KumparanUserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FC0F6F32723F84500231AC3 /* SZCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZCoordinator.swift; sourceTree = "<group>"; };
+		9FC0F6F52723F85900231AC3 /* SZViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZViewController.swift; sourceTree = "<group>"; };
+		9FC0F6F72723F86E00231AC3 /* SZViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZViewModel.swift; sourceTree = "<group>"; };
+		9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordiantorResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +136,52 @@
 		9FC0F6EE2723F13300231AC3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9FC0F6EF2723F7C000231AC3 /* Base */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		9FC0F6EF2723F7C000231AC3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9FC0F6FA2723FC4700231AC3 /* Model */,
+				9FC0F6F22723F7DA00231AC3 /* Coordinator */,
+				9FC0F6F12723F7CE00231AC3 /* View */,
+				9FC0F6F02723F7C700231AC3 /* ViewModel */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9FC0F6F02723F7C700231AC3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FC0F6F72723F86E00231AC3 /* SZViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9FC0F6F12723F7CE00231AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FC0F6F52723F85900231AC3 /* SZViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FC0F6F22723F7DA00231AC3 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9FC0F6F32723F84500231AC3 /* SZCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9FC0F6FA2723FC4700231AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +314,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */,
 				9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */,
+				9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */,
 				9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */,
+				9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */,
 				9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */,
+				9FC0F6F42723F84500231AC3 /* SZCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +494,7 @@
 				DEVELOPMENT_TEAM = QNT26F7HW2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KumparanUser/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = KSocial;
+				INFOPLIST_KEY_CFBundleDisplayName = "Squad Zona";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +523,7 @@
 				DEVELOPMENT_TEAM = QNT26F7HW2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KumparanUser/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = KSocial;
+				INFOPLIST_KEY_CFBundleDisplayName = "Squad Zona";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
