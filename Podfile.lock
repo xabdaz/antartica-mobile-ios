@@ -1,0 +1,44 @@
+PODS:
+  - FittedSheets (1.4.6)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.3)
+  - SwiftLint (0.44.0)
+  - Swinject (2.7.1)
+  - SwinjectAutoregistration (2.7.0):
+    - Swinject (~> 2.7)
+
+DEPENDENCIES:
+  - FittedSheets (~> 1.4.6)
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SwiftLint
+  - Swinject
+  - SwinjectAutoregistration
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Swinject
+    - SwinjectAutoregistration
+  trunk:
+    - FittedSheets
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  FittedSheets: 7f37fee2567d15dcde391f31eccbffb660ddebf0
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  SwiftLint: e96c0a8c770c7ebbc4d36c55baf9096bb65c4584
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
+
+PODFILE CHECKSUM: 7548759796a777cce67bcb65dd1e0636b72371b2
+
+COCOAPODS: 1.11.2
