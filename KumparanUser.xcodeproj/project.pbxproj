@@ -19,6 +19,7 @@
 		9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6F52723F85900231AC3 /* SZViewController.swift */; };
 		9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6F72723F86E00231AC3 /* SZViewModel.swift */; };
 		9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */; };
+		B6F26D56C50FCC308F8104E7 /* Pods_KumparanUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3247C093C554FB68C38976B4 /* Pods-KumparanUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumparanUser.debug.xcconfig"; path = "Target Support Files/Pods-KumparanUser/Pods-KumparanUser.debug.xcconfig"; sourceTree = "<group>"; };
+		360CB6BDC6B252956F3C9AE5 /* Pods-KumparanUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumparanUser.release.xcconfig"; path = "Target Support Files/Pods-KumparanUser/Pods-KumparanUser.release.xcconfig"; sourceTree = "<group>"; };
 		9FC0F6B82723ED4800231AC3 /* KumparanUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumparanUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC0F6BF2723ED4800231AC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		9FC0F6F52723F85900231AC3 /* SZViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZViewController.swift; sourceTree = "<group>"; };
 		9FC0F6F72723F86E00231AC3 /* SZViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZViewModel.swift; sourceTree = "<group>"; };
 		9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordiantorResult.swift; sourceTree = "<group>"; };
+		BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumparanUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6F26D56C50FCC308F8104E7 /* Pods_KumparanUser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480185EE7A503B60CDBCFEE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3247C093C554FB68C38976B4 /* Pods-KumparanUser.debug.xcconfig */,
+				360CB6BDC6B252956F3C9AE5 /* Pods-KumparanUser.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8893AA961182B2918C156EFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FC0F6AF2723ED4800231AC3 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +112,8 @@
 				9FC0F6D42723ED4C00231AC3 /* KumparanUserTests */,
 				9FC0F6DE2723ED4C00231AC3 /* KumparanUserUITests */,
 				9FC0F6B92723ED4800231AC3 /* Products */,
+				480185EE7A503B60CDBCFEE0 /* Pods */,
+				8893AA961182B2918C156EFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,7 +130,8 @@
 		9FC0F6BA2723ED4800231AC3 /* KumparanUser */ = {
 			isa = PBXGroup;
 			children = (
-				9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */,
+				9FF2425A27243AB5005A6093 /* ListPost */,
+				9FF2425927243AA3005A6093 /* App */,
 				9FC0F6BF2723ED4800231AC3 /* ViewController.swift */,
 				9FC0F6C72723ED4C00231AC3 /* Assets.xcassets */,
 				9FC0F6C92723ED4C00231AC3 /* LaunchScreen.storyboard */,
@@ -184,6 +209,45 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		9FF2425927243AA3005A6093 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9FF2425A27243AB5005A6093 /* ListPost */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2425D27243B2A005A6093 /* Model */,
+				9FF2425C27243B15005A6093 /* View */,
+				9FF2425B27243B0C005A6093 /* Coordinator */,
+			);
+			path = ListPost;
+			sourceTree = "<group>";
+		};
+		9FF2425B27243B0C005A6093 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9FF2425C27243B15005A6093 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FF2425D27243B2A005A6093 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9FC0F6E52723ED4C00231AC3 /* Build configuration list for PBXNativeTarget "KumparanUser" */;
 			buildPhases = (
+				4AFCB54312ED6CC8F2368ACE /* [CP] Check Pods Manifest.lock */,
 				9FC0F6B42723ED4800231AC3 /* Sources */,
 				9FC0F6B52723ED4800231AC3 /* Frameworks */,
 				9FC0F6B62723ED4800231AC3 /* Resources */,
+				7E82994490A04422A5734DF6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +374,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AFCB54312ED6CC8F2368ACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KumparanUser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E82994490A04422A5734DF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KumparanUser/Pods-KumparanUser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KumparanUser/Pods-KumparanUser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KumparanUser/Pods-KumparanUser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9FC0F6B42723ED4800231AC3 /* Sources */ = {
@@ -486,6 +594,7 @@
 		};
 		9FC0F6E62723ED4C00231AC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3247C093C554FB68C38976B4 /* Pods-KumparanUser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -515,6 +624,7 @@
 		};
 		9FC0F6E72723ED4C00231AC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360CB6BDC6B252956F3C9AE5 /* Pods-KumparanUser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
