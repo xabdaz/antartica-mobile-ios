@@ -10,5 +10,9 @@ public class ListCoordinator: SZCoordinator {
     public override init() {
     }
     public override func start() {
+        let viewController = ListPostVC(viewModel: ListPostViewModel())
+        
+        navigationController.isNavigationBarHidden = true
+        navigationController.viewControllers = [viewController]
     }
 }

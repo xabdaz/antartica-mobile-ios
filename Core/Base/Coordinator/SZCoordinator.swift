@@ -13,7 +13,7 @@ public protocol Coordinator: AnyObject {
     dynamic func start()
     dynamic func setupBinding()
 
-    dynamic func start(coordinator: Coordinator)
+    dynamic func start(coordinator: Coordinator?)
     dynamic func didFinish(coordinator: Coordinator)
     dynamic func removeChildCoordinators()
     dynamic func didCloseView(
@@ -44,10 +44,16 @@ open class SZCoordinator: NSObject, Coordinator {
 
     open func setupBinding() { }
     
-    open func start(coordinator: Coordinator) {
-        self.childCoordinators += [coordinator]
-        coordinator.parentCoordinator = self
-        coordinator.start()
+    open func start(coordinator: Coordinator?) {
+        if let coordinator = coordinator {
+            self.childCoordinators += [coordinator]
+            coordinator.parentCoordinator = self
+            coordinator.start()
+        } else {
+            #if DEBUG
+            fatalError("Coordinator is nil")
+            #endif
+        }
     }
     
     open func didFinish(coordinator: Coordinator) {

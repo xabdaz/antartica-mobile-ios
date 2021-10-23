@@ -9,8 +9,7 @@ import UIKit
 
 open class SZViewController: UIViewController {
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        let bundle = Bundle(for: type(of: self))
-        super.init(nibName: nibNameOrNil ?? bundle.description, bundle: nibBundleOrNil ?? Bundle.main)
+        super.init(nibName: nibNameOrNil ?? "\(Self.self)", bundle: nibBundleOrNil ?? Bundle.main)
     }
     
     required public init?(coder: NSCoder) {
