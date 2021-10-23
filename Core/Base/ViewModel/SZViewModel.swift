@@ -6,6 +6,6 @@
 //
 
 import Foundation
-open class BaseViewModel: NSObject {
+open class SZViewModel: NSObject {
     
 }

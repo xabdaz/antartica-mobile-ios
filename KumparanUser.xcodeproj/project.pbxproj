@@ -19,6 +19,11 @@
 		9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6F52723F85900231AC3 /* SZViewController.swift */; };
 		9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6F72723F86E00231AC3 /* SZViewModel.swift */; };
 		9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */; };
+		9FF2426027243BCF005A6093 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2425F27243BCF005A6093 /* ListCoordinator.swift */; };
+		9FF2426527243C39005A6093 /* ListPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2426327243C39005A6093 /* ListPostVC.swift */; };
+		9FF2426627243C39005A6093 /* ListPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2426427243C39005A6093 /* ListPostVC.xib */; };
+		9FF2426927243C68005A6093 /* ListPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2426827243C68005A6093 /* ListPostViewModel.swift */; };
+		9FF2426B27243D00005A6093 /* ListPostViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2426A27243D00005A6093 /* ListPostViewData.swift */; };
 		B6F26D56C50FCC308F8104E7 /* Pods_KumparanUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +63,11 @@
 		9FC0F6F52723F85900231AC3 /* SZViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZViewController.swift; sourceTree = "<group>"; };
 		9FC0F6F72723F86E00231AC3 /* SZViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZViewModel.swift; sourceTree = "<group>"; };
 		9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordiantorResult.swift; sourceTree = "<group>"; };
+		9FF2425F27243BCF005A6093 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
+		9FF2426327243C39005A6093 /* ListPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostVC.swift; sourceTree = "<group>"; };
+		9FF2426427243C39005A6093 /* ListPostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPostVC.xib; sourceTree = "<group>"; };
+		9FF2426827243C68005A6093 /* ListPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostViewModel.swift; sourceTree = "<group>"; };
+		9FF2426A27243D00005A6093 /* ListPostViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostViewData.swift; sourceTree = "<group>"; };
 		BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumparanUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -220,6 +230,7 @@
 		9FF2425A27243AB5005A6093 /* ListPost */ = {
 			isa = PBXGroup;
 			children = (
+				9FF2426727243C56005A6093 /* ViewModel */,
 				9FF2425D27243B2A005A6093 /* Model */,
 				9FF2425C27243B15005A6093 /* View */,
 				9FF2425B27243B0C005A6093 /* Coordinator */,
@@ -230,6 +241,7 @@
 		9FF2425B27243B0C005A6093 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				9FF2425F27243BCF005A6093 /* ListCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -237,6 +249,8 @@
 		9FF2425C27243B15005A6093 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9FF2426327243C39005A6093 /* ListPostVC.swift */,
+				9FF2426427243C39005A6093 /* ListPostVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,8 +258,17 @@
 		9FF2425D27243B2A005A6093 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9FF2426A27243D00005A6093 /* ListPostViewData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9FF2426727243C56005A6093 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2426827243C68005A6093 /* ListPostViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +283,7 @@
 				9FC0F6B52723ED4800231AC3 /* Frameworks */,
 				9FC0F6B62723ED4800231AC3 /* Resources */,
 				7E82994490A04422A5734DF6 /* [CP] Embed Pods Frameworks */,
+				9FF2425E27243B9B005A6093 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -355,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC0F6CB2723ED4C00231AC3 /* LaunchScreen.storyboard in Resources */,
+				9FF2426627243C39005A6093 /* ListPostVC.xib in Resources */,
 				9FC0F6C82723ED4C00231AC3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +440,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KumparanUser/Pods-KumparanUser-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9FF2425E27243B9B005A6093 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -422,6 +465,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF2426927243C68005A6093 /* ListPostViewModel.swift in Sources */,
+				9FF2426527243C39005A6093 /* ListPostVC.swift in Sources */,
+				9FF2426027243BCF005A6093 /* ListCoordinator.swift in Sources */,
 				9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */,
 				9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */,
 				9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */,
@@ -429,6 +475,7 @@
 				9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */,
 				9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */,
 				9FC0F6F42723F84500231AC3 /* SZCoordinator.swift in Sources */,
+				9FF2426B27243D00005A6093 /* ListPostViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,7 +653,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Squad Zona";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -636,7 +683,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Squad Zona";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
