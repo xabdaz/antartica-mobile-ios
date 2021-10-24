@@ -6,7 +6,7 @@
 //
 
 import UIKit
-extension UITableViewCell {
+public extension UITableViewCell {
     class var identifier: String {
         return "\(self)"
     }
@@ -31,10 +31,3 @@ extension UITableViewCell {
         return result
     }
 }
-
-extension UICollectionViewCell {
-    class var identifier: String {
-        return "\(self)"
-    }
-}
-

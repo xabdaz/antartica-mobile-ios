@@ -43,6 +43,15 @@
 		9FF242A127255C99005A6093 /* ListPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2429F27255C99005A6093 /* ListPostCell.swift */; };
 		9FF242A227255C99005A6093 /* ListPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF242A027255C99005A6093 /* ListPostCell.xib */; };
 		9FF242A427255F75005A6093 /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242A327255F75005A6093 /* TableView+Extension.swift */; };
+		9FF242AA272577BC005A6093 /* GalerPostViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242A9272577BC005A6093 /* GalerPostViewData.swift */; };
+		9FF242AC27257857005A6093 /* GalerPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242AB27257857005A6093 /* GalerPostViewModel.swift */; };
+		9FF242AF272578F5005A6093 /* GaleriPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242AD272578F5005A6093 /* GaleriPostVC.swift */; };
+		9FF242B0272578F5005A6093 /* GaleriPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF242AE272578F5005A6093 /* GaleriPostVC.xib */; };
+		9FF242B427257BBA005A6093 /* SZCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242B327257BBA005A6093 /* SZCollectionView.swift */; };
+		9FF242B62725EFA6005A6093 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242B52725EFA6005A6093 /* UIView+Extension.swift */; };
+		9FF242B82725F36B005A6093 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242B72725F36B005A6093 /* UICollectionView+Extension.swift */; };
+		9FF242BA2725F78F005A6093 /* SizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242B92725F78F005A6093 /* SizeUtils.swift */; };
+		9FF242BC2725F97E005A6093 /* SZCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242BB2725F97E005A6093 /* SZCollectionViewSection.swift */; };
 		B6F26D56C50FCC308F8104E7 /* Pods_KumparanUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +115,15 @@
 		9FF2429F27255C99005A6093 /* ListPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostCell.swift; sourceTree = "<group>"; };
 		9FF242A027255C99005A6093 /* ListPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPostCell.xib; sourceTree = "<group>"; };
 		9FF242A327255F75005A6093 /* TableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
+		9FF242A9272577BC005A6093 /* GalerPostViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalerPostViewData.swift; sourceTree = "<group>"; };
+		9FF242AB27257857005A6093 /* GalerPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalerPostViewModel.swift; sourceTree = "<group>"; };
+		9FF242AD272578F5005A6093 /* GaleriPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriPostVC.swift; sourceTree = "<group>"; };
+		9FF242AE272578F5005A6093 /* GaleriPostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GaleriPostVC.xib; sourceTree = "<group>"; };
+		9FF242B327257BBA005A6093 /* SZCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZCollectionView.swift; sourceTree = "<group>"; };
+		9FF242B52725EFA6005A6093 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9FF242B72725F36B005A6093 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		9FF242B92725F78F005A6093 /* SizeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeUtils.swift; sourceTree = "<group>"; };
+		9FF242BB2725F97E005A6093 /* SZCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZCollectionViewSection.swift; sourceTree = "<group>"; };
 		BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumparanUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -261,6 +279,7 @@
 			children = (
 				9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */,
 				9FF2429B27255332005A6093 /* SZSectionSection.swift */,
+				9FF242BB2725F97E005A6093 /* SZCollectionViewSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				9FF24272272451C3005A6093 /* ViewControllerUtils.swift */,
+				9FF242B92725F78F005A6093 /* SizeUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -341,6 +361,8 @@
 				9FF24275272452BA005A6093 /* Containter+Extension.swift */,
 				9FF24288272539A8005A6093 /* TabViewController+Reactive.swift */,
 				9FF242A327255F75005A6093 /* TableView+Extension.swift */,
+				9FF242B52725EFA6005A6093 /* UIView+Extension.swift */,
+				9FF242B72725F36B005A6093 /* UICollectionView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -348,6 +370,7 @@
 		9FF2427B27251AC2005A6093 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
+				9FF242A527257748005A6093 /* GaleriPost */,
 				9FF2428427251BF8005A6093 /* ViewModel */,
 				9FF2427F27251B69005A6093 /* View */,
 				9FF2427C27251AE8005A6093 /* Coordinator */,
@@ -418,6 +441,7 @@
 		9FF2429627255020005A6093 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				9FF242B127257AFA005A6093 /* CollectinView */,
 				9FF242972725502B005A6093 /* TableView */,
 			);
 			path = Component;
@@ -436,6 +460,57 @@
 			children = (
 				9FF2429F27255C99005A6093 /* ListPostCell.swift */,
 				9FF242A027255C99005A6093 /* ListPostCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9FF242A527257748005A6093 /* GaleriPost */ = {
+			isa = PBXGroup;
+			children = (
+				9FF242A827257792005A6093 /* Model */,
+				9FF242A727257774005A6093 /* ViewModel */,
+				9FF242A627257768005A6093 /* View */,
+			);
+			path = GaleriPost;
+			sourceTree = "<group>";
+		};
+		9FF242A627257768005A6093 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FF242AD272578F5005A6093 /* GaleriPostVC.swift */,
+				9FF242AE272578F5005A6093 /* GaleriPostVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FF242A727257774005A6093 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FF242AB27257857005A6093 /* GalerPostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9FF242A827257792005A6093 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FF242A9272577BC005A6093 /* GalerPostViewData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FF242B127257AFA005A6093 /* CollectinView */ = {
+			isa = PBXGroup;
+			children = (
+				9FF242B227257B06005A6093 /* Cell */,
+				9FF242B327257BBA005A6093 /* SZCollectionView.swift */,
+			);
+			path = CollectinView;
+			sourceTree = "<group>";
+		};
+		9FF242B227257B06005A6093 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -549,6 +624,7 @@
 			files = (
 				9FF2429527254395005A6093 /* DetailPostVC.xib in Resources */,
 				9FC0F6CB2723ED4C00231AC3 /* LaunchScreen.storyboard in Resources */,
+				9FF242B0272578F5005A6093 /* GaleriPostVC.xib in Resources */,
 				9FF2426627243C39005A6093 /* ListPostVC.xib in Resources */,
 				9FF242A227255C99005A6093 /* ListPostCell.xib in Resources */,
 				9FF2428327251BAA005A6093 /* TabBarVC.xib in Resources */,
@@ -641,28 +717,36 @@
 				9FF2429E27255BF8005A6093 /* SZTableViewCell.swift in Sources */,
 				9FF2426927243C68005A6093 /* ListPostViewModel.swift in Sources */,
 				9FF24273272451C3005A6093 /* ViewControllerUtils.swift in Sources */,
+				9FF242BC2725F97E005A6093 /* SZCollectionViewSection.swift in Sources */,
 				9FF24299272550A9005A6093 /* SZTableView.swift in Sources */,
 				9FF2429C27255332005A6093 /* SZSectionSection.swift in Sources */,
 				9FF2426527243C39005A6093 /* ListPostVC.swift in Sources */,
 				9FF2426027243BCF005A6093 /* ListCoordinator.swift in Sources */,
 				9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */,
+				9FF242AC27257857005A6093 /* GalerPostViewModel.swift in Sources */,
 				9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */,
 				9FF24289272539A8005A6093 /* TabViewController+Reactive.swift in Sources */,
+				9FF242B82725F36B005A6093 /* UICollectionView+Extension.swift in Sources */,
 				9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */,
 				9FF2427027244F3D005A6093 /* SessionService.swift in Sources */,
 				9FF24276272452BA005A6093 /* Containter+Extension.swift in Sources */,
 				9FF2427E27251AFB005A6093 /* TabCoordinator.swift in Sources */,
 				9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */,
 				9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */,
+				9FF242B62725EFA6005A6093 /* UIView+Extension.swift in Sources */,
 				9FF242A127255C99005A6093 /* ListPostCell.swift in Sources */,
 				9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */,
 				9FF242A427255F75005A6093 /* TableView+Extension.swift in Sources */,
+				9FF242B427257BBA005A6093 /* SZCollectionView.swift in Sources */,
 				9FF2428F27253BFB005A6093 /* DetailPostCoordinator.swift in Sources */,
 				9FF2428227251BAA005A6093 /* TabBarVC.swift in Sources */,
+				9FF242BA2725F78F005A6093 /* SizeUtils.swift in Sources */,
 				9FC0F6F42723F84500231AC3 /* SZCoordinator.swift in Sources */,
 				9FF2428627251C13005A6093 /* TabViewModel.swift in Sources */,
 				9FF2429427254395005A6093 /* DetailPostVC.swift in Sources */,
+				9FF242AA272577BC005A6093 /* GalerPostViewData.swift in Sources */,
 				9FF2429127253C5D005A6093 /* DetailPostViewModel.swift in Sources */,
+				9FF242AF272578F5005A6093 /* GaleriPostVC.swift in Sources */,
 				9FF2426B27243D00005A6093 /* ListPostViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
