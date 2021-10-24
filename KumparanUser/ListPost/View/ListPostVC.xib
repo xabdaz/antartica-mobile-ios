@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListPostVC" customModule="KumparanUser" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="JK3-yu-LII" id="WKf-jV-SMj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,32 +20,18 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFB-6u-cAl">
-                    <rect key="frame" x="0.0" y="44" width="414" height="128"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lO8-SK-DA5">
-                            <rect key="frame" x="173.5" y="48.5" width="67" height="31"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            <connections>
-                                <action selector="testPassingData:" destination="-1" eventType="touchUpInside" id="qdZ-av-deg"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="128" id="M0J-Qb-cRz"/>
-                        <constraint firstItem="lO8-SK-DA5" firstAttribute="centerX" secondItem="zFB-6u-cAl" secondAttribute="centerX" id="SR8-fI-3YS"/>
-                        <constraint firstItem="lO8-SK-DA5" firstAttribute="centerY" secondItem="zFB-6u-cAl" secondAttribute="centerY" id="Szj-8Z-HXM"/>
-                    </constraints>
-                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JK3-yu-LII" customClass="SZTableView" customModule="KumparanUser" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="zFB-6u-cAl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="agz-s1-39c"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zFB-6u-cAl" secondAttribute="trailing" id="lih-5F-fcs"/>
-                <constraint firstItem="zFB-6u-cAl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lyS-Xl-j5g"/>
+                <constraint firstItem="JK3-yu-LII" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7G0-cN-57k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JK3-yu-LII" secondAttribute="trailing" id="dgh-V7-dYD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JK3-yu-LII" secondAttribute="bottom" id="iN5-Fz-S0v"/>
+                <constraint firstItem="JK3-yu-LII" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="tKh-m3-DpM"/>
             </constraints>
             <point key="canvasLocation" x="139" y="94"/>
         </view>
@@ -52,9 +39,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

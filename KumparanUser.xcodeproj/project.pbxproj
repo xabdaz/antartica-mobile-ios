@@ -37,6 +37,7 @@
 		9FF2429127253C5D005A6093 /* DetailPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2429027253C5D005A6093 /* DetailPostViewModel.swift */; };
 		9FF2429427254395005A6093 /* DetailPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2429227254395005A6093 /* DetailPostVC.swift */; };
 		9FF2429527254395005A6093 /* DetailPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2429327254395005A6093 /* DetailPostVC.xib */; };
+		9FF24299272550A9005A6093 /* SZTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF24298272550A9005A6093 /* SZTableView.swift */; };
 		B6F26D56C50FCC308F8104E7 /* Pods_KumparanUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		9FF2429027253C5D005A6093 /* DetailPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostViewModel.swift; sourceTree = "<group>"; };
 		9FF2429227254395005A6093 /* DetailPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPostVC.swift; sourceTree = "<group>"; };
 		9FF2429327254395005A6093 /* DetailPostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailPostVC.xib; sourceTree = "<group>"; };
+		9FF24298272550A9005A6093 /* SZTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZTableView.swift; sourceTree = "<group>"; };
 		BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumparanUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -199,6 +201,7 @@
 		9FC0F6EE2723F13300231AC3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9FF2429627255020005A6093 /* Component */,
 				9FF242742724525D005A6093 /* Extension */,
 				9FF24271272451AF005A6093 /* Utils */,
 				9FF2426E27244F20005A6093 /* Service */,
@@ -281,6 +284,7 @@
 		9FF2425C27243B15005A6093 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9FF2429A27255125005A6093 /* Cell */,
 				9FF2426327243C39005A6093 /* ListPostVC.swift */,
 				9FF2426427243C39005A6093 /* ListPostVC.xib */,
 			);
@@ -396,6 +400,29 @@
 				9FF2429027253C5D005A6093 /* DetailPostViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9FF2429627255020005A6093 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				9FF242972725502B005A6093 /* TableView */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		9FF242972725502B005A6093 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				9FF24298272550A9005A6093 /* SZTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		9FF2429A27255125005A6093 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -597,6 +624,7 @@
 				9FF2426D27244E18005A6093 /* AppCoordinator.swift in Sources */,
 				9FF2426927243C68005A6093 /* ListPostViewModel.swift in Sources */,
 				9FF24273272451C3005A6093 /* ViewControllerUtils.swift in Sources */,
+				9FF24299272550A9005A6093 /* SZTableView.swift in Sources */,
 				9FF2426527243C39005A6093 /* ListPostVC.swift in Sources */,
 				9FF2426027243BCF005A6093 /* ListCoordinator.swift in Sources */,
 				9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */,

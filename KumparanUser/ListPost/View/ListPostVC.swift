@@ -9,6 +9,7 @@ import UIKit
 
 class ListPostVC: SZViewController {
 
+    @IBOutlet var tableView: SZTableView!
     private let viewModel: ListPostViewModel
     init(viewModel: ListPostViewModel) {
         self.viewModel = viewModel
