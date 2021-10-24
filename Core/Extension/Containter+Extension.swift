@@ -20,6 +20,7 @@ extension Container {
         autoregister(AppCoordinator.self, initializer: AppCoordinator.init)
         autoregister(ListCoordinator.self, initializer: ListCoordinator.init)
         autoregister(TabCoordinator.self, initializer: TabCoordinator.init)
+        autoregister(DetailPostCoordinator.self, initializer: DetailPostCoordinator.init)
     }
 }
 
@@ -33,5 +34,6 @@ extension Container {
     func registerViewModels() {
         autoregister(ListPostViewModel.self, initializer: ListPostViewModel.init)
         autoregister(TabViewModel.self, initializer: TabViewModel.init)
+        autoregister(DetailPostViewModel.self, initializer: DetailPostViewModel.init)
     }
 }

@@ -23,4 +23,8 @@ class ListPostVC: SZViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func testPassingData(_ sender: Any) {
+        AppDelegate.container.register(ListModel.self) { _ in ListModel(id: "Hai") }
+        self.viewModel.didDetail.onNext(())
+    }
 }

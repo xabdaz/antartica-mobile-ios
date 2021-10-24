@@ -38,8 +38,7 @@ public class TabBarVC: UITabBarController, UITabBarControllerDelegate {
 extension TabBarVC {
     private func setupBinding() {
         self.viewModel.didViewController
-            .bind { [weak self] vc in
-                self?.viewControllers = vc
-            }.disposed(by: self.disposeBag)
+            .bind(to: self.rx.viewControllers)
+            .disposed(by: self.disposeBag)
     }
 }

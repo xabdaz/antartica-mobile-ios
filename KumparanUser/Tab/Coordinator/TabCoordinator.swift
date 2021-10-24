@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import RxSwift
 
 public class TabCoordinator: SZCoordinator {
+
+    private let disposeBag = DisposeBag()
     private let viewModel: TabViewModel
     private let postViewModel: ListPostViewModel
     public init(viewModel: TabViewModel, postViewModel: ListPostViewModel) {
@@ -23,6 +26,11 @@ public class TabCoordinator: SZCoordinator {
     public override func setupBinding() {
         let viewControllers = [self.getPostViewController()]
         self.viewModel.didViewController.accept(viewControllers)
+
+        self.postViewModel.didDetail
+            .bind { [weak self] in
+                self?.navigateToDetail()
+            }.disposed(by: self.disposeBag)
     }
 }
 
@@ -30,8 +38,18 @@ public class TabCoordinator: SZCoordinator {
 private extension TabCoordinator {
     private func getPostViewController() -> SZViewController {
         let viewController = ListPostVC(viewModel: self.postViewModel)
+        viewController.title = "Post"
         let item = UITabBarItem(title: "Post", image: UIImage(named: "gallery 1"), selectedImage: UIImage(named: "gallery 1"))
         viewController.tabBarItem = item
         return viewController
+    }
+}
+
+// MARK: Navigation
+extension TabCoordinator {
+    public func navigateToDetail() {
+        let coordinator = AppDelegate.container.resolve(DetailPostCoordinator.self)
+        coordinator?.navigationController = self.navigation
+        self.start(coordinator: coordinator)
     }
 }
