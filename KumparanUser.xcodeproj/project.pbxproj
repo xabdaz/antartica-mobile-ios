@@ -28,6 +28,10 @@
 		9FF2427027244F3D005A6093 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2426F27244F3D005A6093 /* SessionService.swift */; };
 		9FF24273272451C3005A6093 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF24272272451C3005A6093 /* ViewControllerUtils.swift */; };
 		9FF24276272452BA005A6093 /* Containter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF24275272452BA005A6093 /* Containter+Extension.swift */; };
+		9FF2427E27251AFB005A6093 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2427D27251AFB005A6093 /* TabCoordinator.swift */; };
+		9FF2428227251BAA005A6093 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2428027251BAA005A6093 /* TabBarVC.swift */; };
+		9FF2428327251BAA005A6093 /* TabBarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2428127251BAA005A6093 /* TabBarVC.xib */; };
+		9FF2428627251C13005A6093 /* TabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2428527251C13005A6093 /* TabViewModel.swift */; };
 		B6F26D56C50FCC308F8104E7 /* Pods_KumparanUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +80,10 @@
 		9FF2426F27244F3D005A6093 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		9FF24272272451C3005A6093 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
 		9FF24275272452BA005A6093 /* Containter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Containter+Extension.swift"; sourceTree = "<group>"; };
+		9FF2427D27251AFB005A6093 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		9FF2428027251BAA005A6093 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		9FF2428127251BAA005A6093 /* TabBarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBarVC.xib; sourceTree = "<group>"; };
+		9FF2428527251C13005A6093 /* TabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewModel.swift; sourceTree = "<group>"; };
 		BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumparanUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -148,6 +156,7 @@
 		9FC0F6BA2723ED4800231AC3 /* KumparanUser */ = {
 			isa = PBXGroup;
 			children = (
+				9FF2427B27251AC2005A6093 /* Tab */,
 				9FF2425A27243AB5005A6093 /* ListPost */,
 				9FF2425927243AA3005A6093 /* App */,
 				9FC0F6BF2723ED4800231AC3 /* ViewController.swift */,
@@ -307,6 +316,41 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		9FF2427B27251AC2005A6093 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2428427251BF8005A6093 /* ViewModel */,
+				9FF2427F27251B69005A6093 /* View */,
+				9FF2427C27251AE8005A6093 /* Coordinator */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		9FF2427C27251AE8005A6093 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2427D27251AFB005A6093 /* TabCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9FF2427F27251B69005A6093 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2428027251BAA005A6093 /* TabBarVC.swift */,
+				9FF2428127251BAA005A6093 /* TabBarVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FF2428427251BF8005A6093 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2428527251C13005A6093 /* TabViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -416,6 +460,7 @@
 			files = (
 				9FC0F6CB2723ED4C00231AC3 /* LaunchScreen.storyboard in Resources */,
 				9FF2426627243C39005A6093 /* ListPostVC.xib in Resources */,
+				9FF2428327251BAA005A6093 /* TabBarVC.xib in Resources */,
 				9FC0F6C82723ED4C00231AC3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,10 +556,13 @@
 				9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */,
 				9FF2427027244F3D005A6093 /* SessionService.swift in Sources */,
 				9FF24276272452BA005A6093 /* Containter+Extension.swift in Sources */,
+				9FF2427E27251AFB005A6093 /* TabCoordinator.swift in Sources */,
 				9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */,
 				9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */,
 				9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */,
+				9FF2428227251BAA005A6093 /* TabBarVC.swift in Sources */,
 				9FC0F6F42723F84500231AC3 /* SZCoordinator.swift in Sources */,
+				9FF2428627251C13005A6093 /* TabViewModel.swift in Sources */,
 				9FF2426B27243D00005A6093 /* ListPostViewData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,12 +23,13 @@ public class AppCoordinator: SZCoordinator {
         window.makeKeyAndVisible()
 
         removeChildCoordinators()
-        let coordinator = AppDelegate.container.resolve(ListCoordinator.self)
+        let coordinator = AppDelegate.container.resolve(TabCoordinator.self)
         self.start(coordinator: coordinator)
         
         ViewControllerUtils.setRootViewController(
             window: window,
             viewController: coordinator?.navigationController ?? UIViewController(),
-            withAnimation: true)
+            withAnimation: true
+        )
     }
 }
