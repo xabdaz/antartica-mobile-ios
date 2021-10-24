@@ -18,6 +18,7 @@ def shared_pods
   pod 'FittedSheets', '~> 1.4.6'
   pod 'Swinject'
   pod 'SwinjectAutoregistration'
+  pod 'RxDataSources', '~> 4.0'
 
 end
 

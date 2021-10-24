@@ -6,7 +6,7 @@
 //
 
 import Foundation
-public struct ListModel: Codable {
+public struct ListPostViewData: Codable {
     let id: String
     init(id: String) {
         self.id = id
