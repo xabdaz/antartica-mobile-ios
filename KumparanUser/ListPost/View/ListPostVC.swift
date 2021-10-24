@@ -16,14 +16,15 @@ class ListPostVC: SZViewController {
     private typealias TableData = SZSectionSection<ListPostViewData>
     private typealias DataSourceModel = SectionModel<String, TableData>
 
+    private let disposeBag = DisposeBag()
     private lazy var dataSource = RxTableViewSectionedReloadDataSource<DataSourceModel>(
         configureCell: { [weak self] (_, tableView, indexPath, item) in
             guard let `self` = self else { return UITableViewCell() }
             switch item {
             case let .item(item, identifier: identifier):
-                return self.getPostCell()
+                return self.getPostCell(tableView, indexPath, item)
             case let .loading(identifier: identifier):
-                return self.getPostCell()
+                return UITableViewCell()
             }
         }, titleForHeaderInSection: { ds, section in return ds[section].identity }
     )
@@ -41,6 +42,13 @@ class ListPostVC: SZViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.setupUI()
+        self.setupOutPutBindings()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        self.viewModel.loadData()
     }
 
     @IBAction func testPassingData(_ sender: Any) {
@@ -50,15 +58,31 @@ class ListPostVC: SZViewController {
 }
 extension ListPostVC {
     func setupUI() {
-        
+        ListPostCell.registerTo(tableView: self.tableView)
+
+        self.tableView.rx
+            .setDelegate(self)
+            .disposed(by: self.disposeBag)
+    }
+
+    func setupOutPutBindings() {
+        self.viewModel.outTabelData
+            .bind(to: self.tableView.rx.items(dataSource: self.dataSource))
+            .disposed(by: self.disposeBag)
     }
 }
 
 extension ListPostVC: UITableViewDelegate {
 
-    private func getPostCell() -> UITableViewCell {
-        return UITableViewCell()
+    private func getPostCell(
+        _ tableView: UITableView,
+        _ indexPath: IndexPath,
+        _ model: ListPostViewData
+    ) -> ListPostCell {
+        let cell = ListPostCell.dequeue(tableView: tableView, indexPath: indexPath)
+        return cell
     }
+
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch dataSource[section].items.first {
         case .item:

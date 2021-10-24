@@ -9,7 +9,7 @@ import Foundation
 import RxRelay
 public class DetailPostViewModel: SZViewModel {
     let outTitle = BehaviorRelay<String>(value: "")
-    public init(model: ListModel) {
+    public init(model: ListPostViewData) {
         super.init()
         outTitle.accept(model.id)
     }

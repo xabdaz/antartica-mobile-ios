@@ -26,6 +26,7 @@ public class TabBarVC: UITabBarController, UITabBarControllerDelegate {
     public override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
+        self.setupUI()
         self.setupBinding()
     }
     public func tabBarController(
@@ -36,6 +37,9 @@ public class TabBarVC: UITabBarController, UITabBarControllerDelegate {
        }
 }
 extension TabBarVC {
+    private func setupUI() {
+        UITabBar.appearance().tintColor = .black
+    }
     private func setupBinding() {
         self.viewModel.didViewController
             .bind(to: self.rx.viewControllers)

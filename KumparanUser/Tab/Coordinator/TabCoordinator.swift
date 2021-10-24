@@ -39,7 +39,7 @@ private extension TabCoordinator {
     private func getPostViewController() -> SZViewController {
         let viewController = ListPostVC(viewModel: self.postViewModel)
         viewController.title = "Post"
-        let item = UITabBarItem(title: "Post", image: UIImage(named: "gallery 1"), selectedImage: UIImage(named: "gallery 1"))
+        let item = UITabBarItem(title: "Post", image: UIImage(named: "tabBarPost"), selectedImage: UIImage(named: "tabBarPost"))
         viewController.tabBarItem = item
         return viewController
     }
