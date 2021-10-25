@@ -10,6 +10,11 @@
 		9F9BD0402727080F002862EF /* SZCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD03F2727080F002862EF /* SZCollectionViewCell.swift */; };
 		9F9BD045272709C0002862EF /* GaleriImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD043272709C0002862EF /* GaleriImageCell.swift */; };
 		9F9BD046272709C0002862EF /* GaleriImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9BD044272709C0002862EF /* GaleriImageCell.xib */; };
+		9F9BD04D272727C6002862EF /* UserViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD04C272727C6002862EF /* UserViewData.swift */; };
+		9F9BD04F272727D2002862EF /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD04E272727D2002862EF /* UserViewModel.swift */; };
+		9F9BD052272727F1002862EF /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD050272727F1002862EF /* UserVC.swift */; };
+		9F9BD053272727F1002862EF /* UserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9BD051272727F1002862EF /* UserVC.xib */; };
+		9F9BD055272777E0002862EF /* UtilTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD054272777E0002862EF /* UtilTest.swift */; };
 		9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */; };
 		9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BF2723ED4800231AC3 /* ViewController.swift */; };
 		9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6C42723ED4800231AC3 /* KumparanUser.xcdatamodeld */; };
@@ -22,7 +27,6 @@
 		9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6F52723F85900231AC3 /* SZViewController.swift */; };
 		9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6F72723F86E00231AC3 /* SZViewModel.swift */; };
 		9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */; };
-		9FF2426027243BCF005A6093 /* ListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2425F27243BCF005A6093 /* ListCoordinator.swift */; };
 		9FF2426527243C39005A6093 /* ListPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2426327243C39005A6093 /* ListPostVC.swift */; };
 		9FF2426627243C39005A6093 /* ListPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2426427243C39005A6093 /* ListPostVC.xib */; };
 		9FF2426927243C68005A6093 /* ListPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2426827243C68005A6093 /* ListPostViewModel.swift */; };
@@ -81,6 +85,11 @@
 		9F9BD03F2727080F002862EF /* SZCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZCollectionViewCell.swift; sourceTree = "<group>"; };
 		9F9BD043272709C0002862EF /* GaleriImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriImageCell.swift; sourceTree = "<group>"; };
 		9F9BD044272709C0002862EF /* GaleriImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GaleriImageCell.xib; sourceTree = "<group>"; };
+		9F9BD04C272727C6002862EF /* UserViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewData.swift; sourceTree = "<group>"; };
+		9F9BD04E272727D2002862EF /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		9F9BD050272727F1002862EF /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		9F9BD051272727F1002862EF /* UserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserVC.xib; sourceTree = "<group>"; };
+		9F9BD054272777E0002862EF /* UtilTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilTest.swift; sourceTree = "<group>"; };
 		9FC0F6B82723ED4800231AC3 /* KumparanUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumparanUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC0F6BF2723ED4800231AC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,7 +106,6 @@
 		9FC0F6F52723F85900231AC3 /* SZViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZViewController.swift; sourceTree = "<group>"; };
 		9FC0F6F72723F86E00231AC3 /* SZViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZViewModel.swift; sourceTree = "<group>"; };
 		9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordiantorResult.swift; sourceTree = "<group>"; };
-		9FF2425F27243BCF005A6093 /* ListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCoordinator.swift; sourceTree = "<group>"; };
 		9FF2426327243C39005A6093 /* ListPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostVC.swift; sourceTree = "<group>"; };
 		9FF2426427243C39005A6093 /* ListPostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPostVC.xib; sourceTree = "<group>"; };
 		9FF2426827243C68005A6093 /* ListPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPostViewModel.swift; sourceTree = "<group>"; };
@@ -185,6 +193,51 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		9F9BD04727272752002862EF /* User */ = {
+			isa = PBXGroup;
+			children = (
+				9F9BD04B272727B7002862EF /* Model */,
+				9F9BD04A272727A3002862EF /* ViewModel */,
+				9F9BD0492727279C002862EF /* View */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		9F9BD0482727277E002862EF /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2428427251BF8005A6093 /* ViewModel */,
+				9FF2427F27251B69005A6093 /* View */,
+				9FF2427C27251AE8005A6093 /* Coordinator */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
+		9F9BD0492727279C002862EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F9BD050272727F1002862EF /* UserVC.swift */,
+				9F9BD051272727F1002862EF /* UserVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F9BD04A272727A3002862EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F9BD04E272727D2002862EF /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F9BD04B272727B7002862EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F9BD04C272727C6002862EF /* UserViewData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		9FC0F6AF2723ED4800231AC3 = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +266,6 @@
 			children = (
 				9FF2428A27253B4E005A6093 /* DetailPost */,
 				9FF2427B27251AC2005A6093 /* Tab */,
-				9FF2425A27243AB5005A6093 /* ListPost */,
 				9FF2425927243AA3005A6093 /* App */,
 				9FC0F6BF2723ED4800231AC3 /* ViewController.swift */,
 				9FC0F6C72723ED4C00231AC3 /* Assets.xcassets */,
@@ -227,6 +279,7 @@
 		9FC0F6D42723ED4C00231AC3 /* KumparanUserTests */ = {
 			isa = PBXGroup;
 			children = (
+				9F9BD054272777E0002862EF /* UtilTest.swift */,
 				9FC0F6D52723ED4C00231AC3 /* KumparanUserTests.swift */,
 			);
 			path = KumparanUserTests;
@@ -314,17 +367,8 @@
 				9FF2426727243C56005A6093 /* ViewModel */,
 				9FF2425D27243B2A005A6093 /* Model */,
 				9FF2425C27243B15005A6093 /* View */,
-				9FF2425B27243B0C005A6093 /* Coordinator */,
 			);
 			path = ListPost;
-			sourceTree = "<group>";
-		};
-		9FF2425B27243B0C005A6093 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				9FF2425F27243BCF005A6093 /* ListCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		9FF2425C27243B15005A6093 /* View */ = {
@@ -385,10 +429,10 @@
 		9FF2427B27251AC2005A6093 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
+				9F9BD0482727277E002862EF /* TabView */,
+				9FF2425A27243AB5005A6093 /* ListPost */,
+				9F9BD04727272752002862EF /* User */,
 				9FF242A527257748005A6093 /* GaleriPost */,
-				9FF2428427251BF8005A6093 /* ViewModel */,
-				9FF2427F27251B69005A6093 /* View */,
-				9FF2427C27251AE8005A6093 /* Coordinator */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -644,6 +688,7 @@
 				9FF242B0272578F5005A6093 /* GaleriPostVC.xib in Resources */,
 				9F9BD046272709C0002862EF /* GaleriImageCell.xib in Resources */,
 				9FF2426627243C39005A6093 /* ListPostVC.xib in Resources */,
+				9F9BD053272727F1002862EF /* UserVC.xib in Resources */,
 				9FF242A227255C99005A6093 /* ListPostCell.xib in Resources */,
 				9FF2428327251BAA005A6093 /* TabBarVC.xib in Resources */,
 				9FC0F6C82723ED4C00231AC3 /* Assets.xcassets in Resources */,
@@ -741,10 +786,12 @@
 				9FF24299272550A9005A6093 /* SZTableView.swift in Sources */,
 				9FF2429C27255332005A6093 /* SZSectionSection.swift in Sources */,
 				9FF2426527243C39005A6093 /* ListPostVC.swift in Sources */,
-				9FF2426027243BCF005A6093 /* ListCoordinator.swift in Sources */,
+				9F9BD052272727F1002862EF /* UserVC.swift in Sources */,
 				9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */,
 				9FF242AC27257857005A6093 /* GaleriPostViewModel.swift in Sources */,
 				9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */,
+				9F9BD04F272727D2002862EF /* UserViewModel.swift in Sources */,
+				9F9BD04D272727C6002862EF /* UserViewData.swift in Sources */,
 				9FF24289272539A8005A6093 /* TabViewController+Reactive.swift in Sources */,
 				9FF242B82725F36B005A6093 /* UICollectionView+Extension.swift in Sources */,
 				9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */,
@@ -776,6 +823,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FC0F6D62723ED4C00231AC3 /* KumparanUserTests.swift in Sources */,
+				9F9BD055272777E0002862EF /* UtilTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,12 +985,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QNT26F7HW2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KumparanUser/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Squad Zona";
+				INFOPLIST_KEY_CFBundleDisplayName = "Squad Zone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
@@ -953,7 +1002,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tech.xabdaz.KumparanUser;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.xabdaz.squadzone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -967,12 +1016,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QNT26F7HW2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KumparanUser/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Squad Zona";
+				INFOPLIST_KEY_CFBundleDisplayName = "Squad Zone";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
@@ -983,7 +1033,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tech.xabdaz.KumparanUser;
+				PRODUCT_BUNDLE_IDENTIFIER = tech.xabdaz.squadzone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

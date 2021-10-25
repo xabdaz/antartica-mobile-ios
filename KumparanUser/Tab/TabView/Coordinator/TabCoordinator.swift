@@ -14,10 +14,17 @@ public class TabCoordinator: SZCoordinator {
     private let viewModel: TabViewModel
     private let postViewModel: ListPostViewModel
     private let galeriViewModel: GaleriPostViewModel
-    public init(viewModel: TabViewModel, postViewModel: ListPostViewModel, galeriViewModel: GaleriPostViewModel) {
+    private let userViewModel: UserViewModel
+    public init(
+        viewModel: TabViewModel,
+        postViewModel: ListPostViewModel,
+        galeriViewModel: GaleriPostViewModel,
+        userViewModel: UserViewModel
+    ) {
         self.viewModel = viewModel
         self.postViewModel = postViewModel
         self.galeriViewModel = galeriViewModel
+        self.userViewModel = userViewModel
         super.init()
     }
     public override func start() {
@@ -26,7 +33,7 @@ public class TabCoordinator: SZCoordinator {
     }
 
     public override func setupBinding() {
-        let viewControllers = [self.getPostViewController(), self.getGaleriViewController()]
+        let viewControllers = [self.getPostViewController(), self.getGaleriViewController(), self.getUserViewController()]
         self.viewModel.didViewController.accept(viewControllers)
 
         self.postViewModel.didDetail
@@ -50,6 +57,14 @@ private extension TabCoordinator {
         let viewController = GaleriPostVC(viewModel: self.galeriViewModel)
         viewController.title = "Galeri"
         let item = UITabBarItem(title: "Galeri", image: UIImage(named: "tabBarGalery"), selectedImage: UIImage(named: "tabBarGalery"))
+        viewController.tabBarItem = item
+        return viewController
+    }
+
+    private func getUserViewController() -> UserVC {
+        let viewController = UserVC(viewModel: self.userViewModel)
+        viewController.title = "User"
+        let item = UITabBarItem(title: "User", image: UIImage(named: "tabBarUser"), selectedImage: UIImage(named: "tabBarUser"))
         viewController.tabBarItem = item
         return viewController
     }

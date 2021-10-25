@@ -18,7 +18,6 @@ extension Container {
 extension Container {
     func registerCoordinators() {
         autoregister(AppCoordinator.self, initializer: AppCoordinator.init)
-        autoregister(ListCoordinator.self, initializer: ListCoordinator.init)
         autoregister(TabCoordinator.self, initializer: TabCoordinator.init)
         autoregister(DetailPostCoordinator.self, initializer: DetailPostCoordinator.init)
     }
@@ -36,5 +35,6 @@ extension Container {
         autoregister(TabViewModel.self, initializer: TabViewModel.init)
         autoregister(DetailPostViewModel.self, initializer: DetailPostViewModel.init)
         autoregister(GaleriPostViewModel.self, initializer: GaleriPostViewModel.init)
+        autoregister(UserViewModel.self, initializer: UserViewModel.init)
     }
 }
