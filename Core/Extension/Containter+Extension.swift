@@ -35,5 +35,6 @@ extension Container {
         autoregister(ListPostViewModel.self, initializer: ListPostViewModel.init)
         autoregister(TabViewModel.self, initializer: TabViewModel.init)
         autoregister(DetailPostViewModel.self, initializer: DetailPostViewModel.init)
+        autoregister(GaleriPostViewModel.self, initializer: GaleriPostViewModel.init)
     }
 }

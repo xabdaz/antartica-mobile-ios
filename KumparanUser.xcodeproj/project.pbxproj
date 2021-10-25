@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F9BD0402727080F002862EF /* SZCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD03F2727080F002862EF /* SZCollectionViewCell.swift */; };
+		9F9BD045272709C0002862EF /* GaleriImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD043272709C0002862EF /* GaleriImageCell.swift */; };
+		9F9BD046272709C0002862EF /* GaleriImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9BD044272709C0002862EF /* GaleriImageCell.xib */; };
 		9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */; };
 		9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BF2723ED4800231AC3 /* ViewController.swift */; };
 		9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6C42723ED4800231AC3 /* KumparanUser.xcdatamodeld */; };
@@ -44,7 +47,7 @@
 		9FF242A227255C99005A6093 /* ListPostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF242A027255C99005A6093 /* ListPostCell.xib */; };
 		9FF242A427255F75005A6093 /* TableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242A327255F75005A6093 /* TableView+Extension.swift */; };
 		9FF242AA272577BC005A6093 /* GalerPostViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242A9272577BC005A6093 /* GalerPostViewData.swift */; };
-		9FF242AC27257857005A6093 /* GalerPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242AB27257857005A6093 /* GalerPostViewModel.swift */; };
+		9FF242AC27257857005A6093 /* GaleriPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242AB27257857005A6093 /* GaleriPostViewModel.swift */; };
 		9FF242AF272578F5005A6093 /* GaleriPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242AD272578F5005A6093 /* GaleriPostVC.swift */; };
 		9FF242B0272578F5005A6093 /* GaleriPostVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF242AE272578F5005A6093 /* GaleriPostVC.xib */; };
 		9FF242B427257BBA005A6093 /* SZCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242B327257BBA005A6093 /* SZCollectionView.swift */; };
@@ -75,6 +78,9 @@
 /* Begin PBXFileReference section */
 		3247C093C554FB68C38976B4 /* Pods-KumparanUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumparanUser.debug.xcconfig"; path = "Target Support Files/Pods-KumparanUser/Pods-KumparanUser.debug.xcconfig"; sourceTree = "<group>"; };
 		360CB6BDC6B252956F3C9AE5 /* Pods-KumparanUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumparanUser.release.xcconfig"; path = "Target Support Files/Pods-KumparanUser/Pods-KumparanUser.release.xcconfig"; sourceTree = "<group>"; };
+		9F9BD03F2727080F002862EF /* SZCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZCollectionViewCell.swift; sourceTree = "<group>"; };
+		9F9BD043272709C0002862EF /* GaleriImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriImageCell.swift; sourceTree = "<group>"; };
+		9F9BD044272709C0002862EF /* GaleriImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GaleriImageCell.xib; sourceTree = "<group>"; };
 		9FC0F6B82723ED4800231AC3 /* KumparanUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumparanUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC0F6BF2723ED4800231AC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,7 +122,7 @@
 		9FF242A027255C99005A6093 /* ListPostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListPostCell.xib; sourceTree = "<group>"; };
 		9FF242A327255F75005A6093 /* TableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+Extension.swift"; sourceTree = "<group>"; };
 		9FF242A9272577BC005A6093 /* GalerPostViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalerPostViewData.swift; sourceTree = "<group>"; };
-		9FF242AB27257857005A6093 /* GalerPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalerPostViewModel.swift; sourceTree = "<group>"; };
+		9FF242AB27257857005A6093 /* GaleriPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriPostViewModel.swift; sourceTree = "<group>"; };
 		9FF242AD272578F5005A6093 /* GaleriPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriPostVC.swift; sourceTree = "<group>"; };
 		9FF242AE272578F5005A6093 /* GaleriPostVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GaleriPostVC.xib; sourceTree = "<group>"; };
 		9FF242B327257BBA005A6093 /* SZCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZCollectionView.swift; sourceTree = "<group>"; };
@@ -168,6 +174,15 @@
 				BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F9BD03E272707DD002862EF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9F9BD043272709C0002862EF /* GaleriImageCell.swift */,
+				9F9BD044272709C0002862EF /* GaleriImageCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		9FC0F6AF2723ED4800231AC3 = {
@@ -477,6 +492,7 @@
 		9FF242A627257768005A6093 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F9BD03E272707DD002862EF /* Cell */,
 				9FF242AD272578F5005A6093 /* GaleriPostVC.swift */,
 				9FF242AE272578F5005A6093 /* GaleriPostVC.xib */,
 			);
@@ -486,7 +502,7 @@
 		9FF242A727257774005A6093 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				9FF242AB27257857005A6093 /* GalerPostViewModel.swift */,
+				9FF242AB27257857005A6093 /* GaleriPostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -511,6 +527,7 @@
 		9FF242B227257B06005A6093 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				9F9BD03F2727080F002862EF /* SZCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -625,6 +642,7 @@
 				9FF2429527254395005A6093 /* DetailPostVC.xib in Resources */,
 				9FC0F6CB2723ED4C00231AC3 /* LaunchScreen.storyboard in Resources */,
 				9FF242B0272578F5005A6093 /* GaleriPostVC.xib in Resources */,
+				9F9BD046272709C0002862EF /* GaleriImageCell.xib in Resources */,
 				9FF2426627243C39005A6093 /* ListPostVC.xib in Resources */,
 				9FF242A227255C99005A6093 /* ListPostCell.xib in Resources */,
 				9FF2428327251BAA005A6093 /* TabBarVC.xib in Resources */,
@@ -718,12 +736,14 @@
 				9FF2426927243C68005A6093 /* ListPostViewModel.swift in Sources */,
 				9FF24273272451C3005A6093 /* ViewControllerUtils.swift in Sources */,
 				9FF242BC2725F97E005A6093 /* SZCollectionViewSection.swift in Sources */,
+				9F9BD045272709C0002862EF /* GaleriImageCell.swift in Sources */,
+				9F9BD0402727080F002862EF /* SZCollectionViewCell.swift in Sources */,
 				9FF24299272550A9005A6093 /* SZTableView.swift in Sources */,
 				9FF2429C27255332005A6093 /* SZSectionSection.swift in Sources */,
 				9FF2426527243C39005A6093 /* ListPostVC.swift in Sources */,
 				9FF2426027243BCF005A6093 /* ListCoordinator.swift in Sources */,
 				9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */,
-				9FF242AC27257857005A6093 /* GalerPostViewModel.swift in Sources */,
+				9FF242AC27257857005A6093 /* GaleriPostViewModel.swift in Sources */,
 				9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */,
 				9FF24289272539A8005A6093 /* TabViewController+Reactive.swift in Sources */,
 				9FF242B82725F36B005A6093 /* UICollectionView+Extension.swift in Sources */,

@@ -9,6 +9,6 @@ import RxSwift
 import RxCocoa
 import RxDataSources
 
-public class GalerPostViewModel: SZViewModel {
+public class GaleriPostViewModel: SZViewModel {
     let outGaleri = BehaviorRelay<[GalerPostViewData]>(value: [])
 }

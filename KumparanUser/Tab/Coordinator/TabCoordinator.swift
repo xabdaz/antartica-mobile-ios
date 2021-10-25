@@ -13,9 +13,11 @@ public class TabCoordinator: SZCoordinator {
     private let disposeBag = DisposeBag()
     private let viewModel: TabViewModel
     private let postViewModel: ListPostViewModel
-    public init(viewModel: TabViewModel, postViewModel: ListPostViewModel) {
+    private let galeriViewModel: GaleriPostViewModel
+    public init(viewModel: TabViewModel, postViewModel: ListPostViewModel, galeriViewModel: GaleriPostViewModel) {
         self.viewModel = viewModel
         self.postViewModel = postViewModel
+        self.galeriViewModel = galeriViewModel
         super.init()
     }
     public override func start() {
@@ -24,7 +26,7 @@ public class TabCoordinator: SZCoordinator {
     }
 
     public override func setupBinding() {
-        let viewControllers = [self.getPostViewController()]
+        let viewControllers = [self.getPostViewController(), self.getGaleriViewController()]
         self.viewModel.didViewController.accept(viewControllers)
 
         self.postViewModel.didDetail
@@ -36,13 +38,22 @@ public class TabCoordinator: SZCoordinator {
 
 // MARK: ViewController
 private extension TabCoordinator {
-    private func getPostViewController() -> SZViewController {
+    private func getPostViewController() -> ListPostVC {
         let viewController = ListPostVC(viewModel: self.postViewModel)
         viewController.title = "Post"
         let item = UITabBarItem(title: "Post", image: UIImage(named: "tabBarPost"), selectedImage: UIImage(named: "tabBarPost"))
         viewController.tabBarItem = item
         return viewController
     }
+
+    private func getGaleriViewController() -> GaleriPostVC {
+        let viewController = GaleriPostVC(viewModel: self.galeriViewModel)
+        viewController.title = "Galeri"
+        let item = UITabBarItem(title: "Galeri", image: UIImage(named: "tabBarGalery"), selectedImage: UIImage(named: "tabBarGalery"))
+        viewController.tabBarItem = item
+        return viewController
+    }
+
 }
 
 // MARK: Navigation

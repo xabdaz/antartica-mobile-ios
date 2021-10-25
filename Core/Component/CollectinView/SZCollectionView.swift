@@ -7,10 +7,10 @@
 
 import UIKit
 public protocol SZCollectionViewDelegate: AnyObject {
-    dynamic func collectionView(_ collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell
-    dynamic func registerNib(collectionView: UICollectionView)
+
+    dynamic func collectionView(object: Any, _ collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell
     dynamic func collectionView(_ didSelectItemAtcollectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
-    dynamic func collectionView(_ didSelectItemAtcollectionView: UICollectionView, object: AnyObject)
+    dynamic func collectionView(_ didSelectItemAtcollectionView: UICollectionView, object: Any)
 }
 
 open class SZCollectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -19,14 +19,17 @@ open class SZCollectionView: UIView, UICollectionViewDelegate, UICollectionViewD
 
     private let collectionView: UICollectionView
     public override init(frame: CGRect) {
-        self.collectionView = UICollectionView(frame: frame)
+        self.collectionView = UICollectionView(frame: frame, collectionViewLayout: UICollectionViewFlowLayout())
         super.init(frame: frame)
-        self.setupView()
     }
     
     required public init?(coder: NSCoder) {
-        self.collectionView = UICollectionView(frame: .zero)
+        self.collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         super.init(coder: coder)
+    }
+
+    open override func awakeFromNib() {
+        super.awakeFromNib()
         self.setupView()
     }
     private func hasSectionAtIndex(index: Int) -> Bool {
@@ -61,13 +64,18 @@ open class SZCollectionView: UIView, UICollectionViewDelegate, UICollectionViewD
         else { sections.remove(at: index) }
     }
 
-    private func setupView() {
-        self.addSubview(self)
-        collectionView.edges(to: self)
-        self.delegate?.registerNib(collectionView: self.collectionView)
-        self.registerNib()
+    func setupView() {
+        
         collectionView.delegate = self
         collectionView.dataSource = self
+        self.addSubview(collectionView)
+        collectionView.edges(to: self)
+        self.setNumberOfColumn(
+            numberOfColumn: 1,
+            multiplierHeight: 1,
+            sectionInset: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0),
+            minimumSpacing: 5
+        )
     }
 
     open func setLayout(
@@ -92,7 +100,7 @@ open class SZCollectionView: UIView, UICollectionViewDelegate, UICollectionViewD
     ) {
         var itemViewSize: CGSize = CGSize.zero
         itemViewSize.width = SizeUtils.getWidthGrid(
-            containerWidth: self.bounds.width,
+            containerWidth: UIScreen.main.bounds.width,
             horizontalPadding: sectionInset.left,
             columnSpacing: minimumSpacing,
             columnCount: numberOfColumn
@@ -107,8 +115,10 @@ open class SZCollectionView: UIView, UICollectionViewDelegate, UICollectionViewD
         )
     }
 
-    open func registerNib() {
-        UICollectionViewCell.registerTo(collectionView: self.collectionView)
+    public func registerCellIdentifiers(cellIdentifiers: [UICollectionViewCell.Type]) {
+        for cellIdentifier in cellIdentifiers {
+            cellIdentifier.registerTo(collectionView: collectionView)
+        }
     }
 
     open func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -129,13 +139,17 @@ open class SZCollectionView: UIView, UICollectionViewDelegate, UICollectionViewD
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
-        guard let cell = self.delegate?.collectionView(collectionView, indexPath: indexPath) else {
+        let objcet = self.sections[indexPath.section].getItemAtIndex(index: indexPath.row)
+        guard let cell = self.delegate?.collectionView(object: objcet, collectionView, indexPath: indexPath) else {
             return UICollectionViewCell()
         }
         return cell
     }
 
-    open func collectionView(_ didSelectItemAtcollectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    open func collectionView(
+        _ didSelectItemAtcollectionView: UICollectionView,
+        didSelectItemAt indexPath: IndexPath
+    ) {
         if let delegate = self.delegate {
             let item = sections[indexPath.section].getItemAtIndex(index: indexPath.row)
             delegate.collectionView(didSelectItemAtcollectionView, object: item)

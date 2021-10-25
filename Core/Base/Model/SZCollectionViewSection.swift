@@ -9,7 +9,7 @@ import Foundation
 public struct SZCollectionViewSection {
     
     private var title: String = ""
-    private var items: [AnyObject] = []
+    private var items: [Any] = []
     
     public func numberOfItems() -> Int {
         return items.count
@@ -19,11 +19,11 @@ public struct SZCollectionViewSection {
         return index < items.count
     }
     
-    public mutating func appendItem(item: AnyObject) {
+    public mutating func appendItem(item: Any) {
         items.insert(item, at: items.count)
     }
     
-    public mutating func setItems(items: [AnyObject]) {
+    public mutating func setItems(items: [Any]) {
         self.items = items
     }
 
@@ -31,7 +31,7 @@ public struct SZCollectionViewSection {
         self.title = title
     }
     
-    public func getItemAtIndex(index: Int) -> AnyObject {
+    public func getItemAtIndex(index: Int) -> Any {
         if hasItemAtIndex(index: index) {
             return items[index]
         }
