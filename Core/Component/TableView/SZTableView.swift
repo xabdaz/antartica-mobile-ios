@@ -6,29 +6,50 @@
 //
 
 import UIKit
-class SZTableView: UITableView {
+import RxSwift
+import RxCocoa
+
+open class SZTableView: UITableView {
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         setupView()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         setupView()
     }
     
-    func setupView() {
+    public func setupView() {
         sectionHeaderHeight = UITableView.automaticDimension
         sectionFooterHeight = 0.001 // zero cannot implemented by swift
         rowHeight = UITableView.automaticDimension
         separatorStyle = .none
     }
 
-    func reloadSectionWithoutAnimation(section: Int) {
+    public func reloadSectionWithoutAnimation(section: Int) {
         UIView.setAnimationsEnabled(false)
         self.beginUpdates()
         self.reloadSections(IndexSet(integer: section), with: .none)
         self.endUpdates()
         UIView.setAnimationsEnabled(true)
     }
+
+    func setWrapContent(contraint: NSLayoutConstraint, disposable: DisposeBag) {
+        rx.observe(CGSize.self, #keyPath(UITableView.contentSize))
+            .mainThreadAsync()
+            .bind(onNext: { [weak self] size in
+                guard let height = size?.height else { return }
+                contraint.constant = height
+            }
+            ).disposed(by: disposable)
+    }
+    func setWrap(contraint: NSLayoutConstraint) -> Observable<CGFloat> {
+        return rx.observe(CGSize.self, #keyPath(UITableView.contentSize))
+            .mainThreadAsync().flatMap { size -> Observable<CGFloat> in
+                guard let height = size?.height else { return .never() }
+                return .just(height)
+            }
+    }
+    
 }

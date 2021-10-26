@@ -21,7 +21,7 @@ open class ApiRequest<T: Codable> {
         expectedCode: Int = 200,
         form: [String:String]? = nil,
         json: Data? = nil,
-        header: [String: String] = [:],
+        header: [String: String] = ["Content-type" : "application/json"],
         useSZModel: Bool = true
     ) {
         self.resource = resource

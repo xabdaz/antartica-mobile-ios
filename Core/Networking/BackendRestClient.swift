@@ -19,7 +19,7 @@ public class BackendRestClient {
     func request<T: Codable>(_ request: ApiRequest<T>) -> Single<T>{
         return Single.create { [weak self] single in
             guard let self = self else { return Disposables.create() }
-
+            self.httpClient.set(headers: request.header)
             let resource: String = "https://jsonplaceholder.typicode.com\(request.resource)"
             self.httpClient.request(
                 resource: resource,

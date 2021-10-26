@@ -41,5 +41,7 @@ extension Container {
         autoregister(GaleriPostViewModel.self, initializer: GaleriPostViewModel.init)
         autoregister(UserViewModel.self, initializer: UserViewModel.init)
         autoregister(LaunchViewModel.self, initializer: LaunchViewModel.init)
+        autoregister(AlbumViewModel.self, initializer: AlbumViewModel.init)
+        autoregister(ImageViewModel.self, initializer: ImageViewModel.init)
     }
 }

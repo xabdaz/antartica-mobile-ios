@@ -12,9 +12,9 @@ public protocol HttpClient {
 }
 
 public class HttpClientProduction: HttpClient {
-    private var header: [String: String] = [:]
+    private var headers: [String: String] = [:]
     public func set(headers: [String : String]) {
-        self.header = headers
+        self.headers = headers
     }
     
     public func request(
@@ -25,6 +25,14 @@ public class HttpClientProduction: HttpClient {
         guard let url = URL(string: resource) else { return }
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
+        if method == .post {
+            request.httpBody = json
+        } else {
+            
+        }
+        for head in self.headers {
+            request.addValue(head.value, forHTTPHeaderField: head.key)
+        }
         URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
             guard let `self` = self else { return }
             if error == nil {

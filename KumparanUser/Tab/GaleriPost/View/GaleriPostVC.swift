@@ -6,10 +6,13 @@
 //
 
 import UIKit
+import RxSwift
 
 public class GaleriPostVC: SZViewController {
 
-    @IBOutlet var collectionView: SZCollectionView!
+    private let disposeBag = DisposeBag()
+
+    @IBOutlet var tableView: SZTableView!
 
     private let viewModel: GaleriPostViewModel
     public init(viewModel: GaleriPostViewModel) {
@@ -21,35 +24,25 @@ public class GaleriPostVC: SZViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
-
-        collectionView.registerCellIdentifiers(cellIdentifiers: [GaleriImageCell.self])
-        self.collectionView.delegate = self
-        var item = SZCollectionViewSection()
-        let items = [UIImage(named: "tabBarGalery"), UIImage(named: "tabBarPost"),UIImage(named: "tabBarGalery"), UIImage(named: "tabBarPost"),UIImage(named: "tabBarGalery"), UIImage(named: "tabBarPost"),UIImage(named: "tabBarGalery"), UIImage(named: "tabBarPost")]
-        
-        item.setItems(items: items as [Any])
-        self.collectionView.setSection(section: item)
-        
-        self.collectionView.setNumberOfColumn(numberOfColumn: 2, multiplierHeight: 1.5, sectionInset: UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0), minimumSpacing: 8)
+        self.setupUI()
+        self.setupOutputBindings()
+        self.viewModel.setupData()
     }
 
 }
-
-extension GaleriPostVC: SZCollectionViewDelegate {
-    public func collectionView(_ didSelectItemAtcollectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+extension GaleriPostVC {
+    func setupUI() {
+        AlbumCell.registerTo(tableView: self.tableView)
     }
-    
-    public func collectionView(object: Any, _ collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = GaleriImageCell.dequeue(collectionView: collectionView, indexPath: indexPath)
-        let image = object as? UIImage
-        cell.imageView.image = image
-        return cell
+    func setupOutputBindings() {
+        self.viewModel.outTableView
+            .bind(to: self.tableView.rx.items(
+                cellIdentifier: AlbumCell.identifier, cellType: AlbumCell.self
+            )) { _, model, cell in
+                cell.setContent(model: model)
+            }.disposed(by: self.disposeBag)
     }
-    
-    public func collectionView(_ didSelectItemAtcollectionView: UICollectionView, object: Any) {
-    }
-    
-    
 }

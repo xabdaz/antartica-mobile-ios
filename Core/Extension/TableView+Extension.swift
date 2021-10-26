@@ -30,4 +30,13 @@ public extension UITableViewCell {
         guard let result = cell as? Self else { return Self() }
         return result
     }
+
+    var baseTabelView: UITableView? {
+        var view = self.superview
+        while let v = view, v.isKind(of: UITableView.self) == false {
+            view = v.superview
+        }
+        
+        return view as? UITableView
+    }
 }

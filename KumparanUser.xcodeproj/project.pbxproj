@@ -84,6 +84,15 @@
 		9FFAA5E72728774300A1B3E8 /* LaunchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAA5E52728774300A1B3E8 /* LaunchVC.xib */; };
 		9FFAA5E9272877BF00A1B3E8 /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5E8272877BF00A1B3E8 /* LaunchCoordinator.swift */; };
 		9FFAA5EB27287B4400A1B3E8 /* Reactive+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5EA27287B4400A1B3E8 /* Reactive+Extension.swift */; };
+		9FFAA5EE2728856100A1B3E8 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5EC2728856100A1B3E8 /* AlbumCell.swift */; };
+		9FFAA5EF2728856100A1B3E8 /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAA5ED2728856100A1B3E8 /* AlbumCell.xib */; };
+		9FFAA5F1272888DD00A1B3E8 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5F0272888DD00A1B3E8 /* AlbumViewModel.swift */; };
+		9FFAA5F3272889EA00A1B3E8 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5F2272889EA00A1B3E8 /* AlbumModel.swift */; };
+		9FFAA5F527288C3900A1B3E8 /* AlbumViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5F427288C3900A1B3E8 /* AlbumViewData.swift */; };
+		9FFAA5F827288DF500A1B3E8 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5F627288DF500A1B3E8 /* ImageCell.swift */; };
+		9FFAA5F927288DF500A1B3E8 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAA5F727288DF500A1B3E8 /* ImageCell.xib */; };
+		9FFAA5FB27289F1600A1B3E8 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5FA27289F1600A1B3E8 /* ImageViewModel.swift */; };
+		9FFAA5FD27289FDB00A1B3E8 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5FC27289FDB00A1B3E8 /* PhotoModel.swift */; };
 		B6F26D56C50FCC308F8104E7 /* Pods_KumparanUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -188,6 +197,15 @@
 		9FFAA5E52728774300A1B3E8 /* LaunchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchVC.xib; sourceTree = "<group>"; };
 		9FFAA5E8272877BF00A1B3E8 /* LaunchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
 		9FFAA5EA27287B4400A1B3E8 /* Reactive+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Extension.swift"; sourceTree = "<group>"; };
+		9FFAA5EC2728856100A1B3E8 /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		9FFAA5ED2728856100A1B3E8 /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
+		9FFAA5F0272888DD00A1B3E8 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		9FFAA5F2272889EA00A1B3E8 /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		9FFAA5F427288C3900A1B3E8 /* AlbumViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewData.swift; sourceTree = "<group>"; };
+		9FFAA5F627288DF500A1B3E8 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		9FFAA5F727288DF500A1B3E8 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		9FFAA5FA27289F1600A1B3E8 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		9FFAA5FC27289FDB00A1B3E8 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumparanUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -247,6 +265,10 @@
 			children = (
 				9F9BD043272709C0002862EF /* GaleriImageCell.swift */,
 				9F9BD044272709C0002862EF /* GaleriImageCell.xib */,
+				9FFAA5EC2728856100A1B3E8 /* AlbumCell.swift */,
+				9FFAA5ED2728856100A1B3E8 /* AlbumCell.xib */,
+				9FFAA5F627288DF500A1B3E8 /* ImageCell.swift */,
+				9FFAA5F727288DF500A1B3E8 /* ImageCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -641,6 +663,8 @@
 			isa = PBXGroup;
 			children = (
 				9FF242AB27257857005A6093 /* GaleriPostViewModel.swift */,
+				9FFAA5F0272888DD00A1B3E8 /* AlbumViewModel.swift */,
+				9FFAA5FA27289F1600A1B3E8 /* ImageViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -649,6 +673,7 @@
 			isa = PBXGroup;
 			children = (
 				9FF242A9272577BC005A6093 /* GalerPostViewData.swift */,
+				9FFAA5F427288C3900A1B3E8 /* AlbumViewData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -676,6 +701,8 @@
 				9FFAA5C92728546C00A1B3E8 /* PostModel.swift */,
 				9FFAA5CD27286D4C00A1B3E8 /* UserModel.swift */,
 				9FFAA5D92728714200A1B3E8 /* SettingKey.swift */,
+				9FFAA5F2272889EA00A1B3E8 /* AlbumModel.swift */,
+				9FFAA5FC27289FDB00A1B3E8 /* PhotoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -838,6 +865,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFAA5F927288DF500A1B3E8 /* ImageCell.xib in Resources */,
 				9FF2429527254395005A6093 /* DetailPostVC.xib in Resources */,
 				9FFAA5E72728774300A1B3E8 /* LaunchVC.xib in Resources */,
 				9FC0F6CB2723ED4C00231AC3 /* LaunchScreen.storyboard in Resources */,
@@ -845,6 +873,7 @@
 				9F9BD046272709C0002862EF /* GaleriImageCell.xib in Resources */,
 				9F9BD05927277C7F002862EF /* UserCell.xib in Resources */,
 				9FF2426627243C39005A6093 /* ListPostVC.xib in Resources */,
+				9FFAA5EF2728856100A1B3E8 /* AlbumCell.xib in Resources */,
 				9F9BD053272727F1002862EF /* UserVC.xib in Resources */,
 				9FF242A227255C99005A6093 /* ListPostCell.xib in Resources */,
 				9FF2428327251BAA005A6093 /* TabBarVC.xib in Resources */,
@@ -939,6 +968,7 @@
 				9FF2426927243C68005A6093 /* ListPostViewModel.swift in Sources */,
 				9FFAA5DA2728714200A1B3E8 /* SettingKey.swift in Sources */,
 				9FFAA5E9272877BF00A1B3E8 /* LaunchCoordinator.swift in Sources */,
+				9FFAA5F827288DF500A1B3E8 /* ImageCell.swift in Sources */,
 				9FFAA5CA2728546C00A1B3E8 /* PostModel.swift in Sources */,
 				9F9BD06327279013002862EF /* HttpMethod.swift in Sources */,
 				9FF24273272451C3005A6093 /* ViewControllerUtils.swift in Sources */,
@@ -949,7 +979,9 @@
 				9F9BD067272793CE002862EF /* ApiRequest.swift in Sources */,
 				9F9BD05827277C7F002862EF /* UserCell.swift in Sources */,
 				9F2FD8472728045D00CEC67B /* PostRepository.swift in Sources */,
+				9FFAA5F527288C3900A1B3E8 /* AlbumViewData.swift in Sources */,
 				9FF2429C27255332005A6093 /* SZSectionSection.swift in Sources */,
+				9FFAA5EE2728856100A1B3E8 /* AlbumCell.swift in Sources */,
 				9FF2426527243C39005A6093 /* ListPostVC.swift in Sources */,
 				9F9BD06D2727957F002862EF /* Json.swift in Sources */,
 				9FFAA5D62728701500A1B3E8 /* Encodable+Extension.swift in Sources */,
@@ -960,6 +992,7 @@
 				9FF242AC27257857005A6093 /* GaleriPostViewModel.swift in Sources */,
 				9F9BD06B2727954E002862EF /* Data+Extension.swift in Sources */,
 				9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */,
+				9FFAA5FD27289FDB00A1B3E8 /* PhotoModel.swift in Sources */,
 				9F9BD04F272727D2002862EF /* UserViewModel.swift in Sources */,
 				9F9BD04D272727C6002862EF /* UserViewData.swift in Sources */,
 				9FF24289272539A8005A6093 /* TabViewController+Reactive.swift in Sources */,
@@ -971,11 +1004,14 @@
 				9FF24276272452BA005A6093 /* Containter+Extension.swift in Sources */,
 				9FF2427E27251AFB005A6093 /* TabCoordinator.swift in Sources */,
 				9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */,
+				9FFAA5F3272889EA00A1B3E8 /* AlbumModel.swift in Sources */,
 				9FFAA5EB27287B4400A1B3E8 /* Reactive+Extension.swift in Sources */,
 				9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */,
 				9FFAA5CC2728671A00A1B3E8 /* String+Extension.swift in Sources */,
 				9FF242B62725EFA6005A6093 /* UIView+Extension.swift in Sources */,
+				9FFAA5FB27289F1600A1B3E8 /* ImageViewModel.swift in Sources */,
 				9FF242A127255C99005A6093 /* ListPostCell.swift in Sources */,
+				9FFAA5F1272888DD00A1B3E8 /* AlbumViewModel.swift in Sources */,
 				9F9BD05D2727894D002862EF /* BackendRestClient.swift in Sources */,
 				9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */,
 				9FF242A427255F75005A6093 /* TableView+Extension.swift in Sources */,

@@ -18,4 +18,16 @@ public enum PostRepository {
             super.init(resource: "/users", useSZModel: false)
         }
     }
+
+    public class Albums: ApiRequest<[AlbumModel]> {
+        init(userId: Int) {
+            super.init(resource: "/albums?userId=\(userId)", useSZModel: false)
+        }
+    }
+
+    public class Photo: ApiRequest<[PhotoModel]> {
+        init(albumId: Int) {
+            super.init(resource: "/photos?albumId=\(albumId)", useSZModel: false)
+        }
+    }
 }

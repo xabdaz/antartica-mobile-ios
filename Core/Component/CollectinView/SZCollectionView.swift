@@ -70,12 +70,6 @@ open class SZCollectionView: UIView, UICollectionViewDelegate, UICollectionViewD
         collectionView.dataSource = self
         self.addSubview(collectionView)
         collectionView.edges(to: self)
-        self.setNumberOfColumn(
-            numberOfColumn: 1,
-            multiplierHeight: 1,
-            sectionInset: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0),
-            minimumSpacing: 5
-        )
     }
 
     open func setLayout(
@@ -111,7 +105,7 @@ open class SZCollectionView: UIView, UICollectionViewDelegate, UICollectionViewD
             itemSize: itemViewSize,
             sectionInset: sectionInset,
             minimumSpacing: minimumSpacing,
-            scrollDirection: .vertical
+            scrollDirection: .horizontal
         )
     }
 
