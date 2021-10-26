@@ -19,6 +19,7 @@ def shared_pods
   pod 'Swinject'
   pod 'SwinjectAutoregistration'
   pod 'RxDataSources', '~> 4.0'
+  pod 'Kingfisher'
 
 end
 

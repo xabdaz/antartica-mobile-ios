@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import Kingfisher
 
 class ImageCell: SZTableViewCell {
     
@@ -64,7 +65,15 @@ extension ImageCell: SZCollectionViewDelegate {
     // MARK: SZCollectionViewDelegate
     func collectionView(object: Any, _ collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
         let cell = GaleriImageCell.dequeue(collectionView: collectionView, indexPath: indexPath)
-        cell.imageView.backgroundColor = .red
+        if let model = object as? PhotoModel, let urlString = model.thumbnailUrl, let url = URL(string: urlString) {
+            cell.imageView.kf.setImage(
+                with: url,
+                placeholder: UIImage(named: "placeholder"),
+                options: [
+                    .transition(.fade(1))
+                ]
+            )
+        }
         return cell
     }
     
