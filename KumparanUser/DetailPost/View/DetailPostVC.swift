@@ -9,7 +9,8 @@ import UIKit
 import RxSwift
 
 public class DetailPostVC: SZViewController {
-
+    @IBOutlet var testLabel: UILabel!
+    
     private let disposeBag = DisposeBag()
     private let viewModel: DetailPostViewModel
     public init(viewModel: DetailPostViewModel) {
@@ -27,6 +28,7 @@ public class DetailPostVC: SZViewController {
         self.viewModel.outTitle
             .bind { [weak self] text in
                 self?.title = text
+                self?.testLabel.text = text
             }.disposed(by: self.disposeBag)
         // Do any additional setup after loading the view.
     }

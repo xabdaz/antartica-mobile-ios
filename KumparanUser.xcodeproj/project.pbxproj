@@ -15,6 +15,8 @@
 		9F9BD052272727F1002862EF /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD050272727F1002862EF /* UserVC.swift */; };
 		9F9BD053272727F1002862EF /* UserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9BD051272727F1002862EF /* UserVC.xib */; };
 		9F9BD055272777E0002862EF /* UtilTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD054272777E0002862EF /* UtilTest.swift */; };
+		9F9BD05827277C7F002862EF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD05627277C7E002862EF /* UserCell.swift */; };
+		9F9BD05927277C7F002862EF /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9BD05727277C7F002862EF /* UserCell.xib */; };
 		9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */; };
 		9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BF2723ED4800231AC3 /* ViewController.swift */; };
 		9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6C42723ED4800231AC3 /* KumparanUser.xcdatamodeld */; };
@@ -90,6 +92,8 @@
 		9F9BD050272727F1002862EF /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		9F9BD051272727F1002862EF /* UserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserVC.xib; sourceTree = "<group>"; };
 		9F9BD054272777E0002862EF /* UtilTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilTest.swift; sourceTree = "<group>"; };
+		9F9BD05627277C7E002862EF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		9F9BD05727277C7F002862EF /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		9FC0F6B82723ED4800231AC3 /* KumparanUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumparanUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC0F6BF2723ED4800231AC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 		9F9BD0492727279C002862EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F9BD05A27277C84002862EF /* Cell */,
 				9F9BD050272727F1002862EF /* UserVC.swift */,
 				9F9BD051272727F1002862EF /* UserVC.xib */,
 			);
@@ -236,6 +241,15 @@
 				9F9BD04C272727C6002862EF /* UserViewData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9F9BD05A27277C84002862EF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9F9BD05627277C7E002862EF /* UserCell.swift */,
+				9F9BD05727277C7F002862EF /* UserCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		9FC0F6AF2723ED4800231AC3 = {
@@ -687,6 +701,7 @@
 				9FC0F6CB2723ED4C00231AC3 /* LaunchScreen.storyboard in Resources */,
 				9FF242B0272578F5005A6093 /* GaleriPostVC.xib in Resources */,
 				9F9BD046272709C0002862EF /* GaleriImageCell.xib in Resources */,
+				9F9BD05927277C7F002862EF /* UserCell.xib in Resources */,
 				9FF2426627243C39005A6093 /* ListPostVC.xib in Resources */,
 				9F9BD053272727F1002862EF /* UserVC.xib in Resources */,
 				9FF242A227255C99005A6093 /* ListPostCell.xib in Resources */,
@@ -784,6 +799,7 @@
 				9F9BD045272709C0002862EF /* GaleriImageCell.swift in Sources */,
 				9F9BD0402727080F002862EF /* SZCollectionViewCell.swift in Sources */,
 				9FF24299272550A9005A6093 /* SZTableView.swift in Sources */,
+				9F9BD05827277C7F002862EF /* UserCell.swift in Sources */,
 				9FF2429C27255332005A6093 /* SZSectionSection.swift in Sources */,
 				9FF2426527243C39005A6093 /* ListPostVC.swift in Sources */,
 				9F9BD052272727F1002862EF /* UserVC.swift in Sources */,

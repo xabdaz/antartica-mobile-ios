@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import RxSwift
 
 public class UserVC: SZViewController {
+    @IBOutlet var tableView: SZTableView!
 
+    private let disposeBag = DisposeBag()
     private let viewModel: UserViewModel
     public init(viewModel: UserViewModel) {
         self.viewModel = viewModel
@@ -21,6 +24,22 @@ public class UserVC: SZViewController {
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupUI()
+        self.setupOutputBindings()
+        self.viewModel.setupData()
     }
 
+}
+extension UserVC {
+    func setupUI() {
+        UserCell.registerTo(tableView: self.tableView)
+    }
+    func setupOutputBindings() {
+        self.viewModel.outTableView
+            .bind(to: self.tableView.rx.items(
+                cellIdentifier: UserCell.identifier, cellType: UserCell.self
+            )) { _, model, cell in
+                cell.setContent(model: model)
+            }.disposed(by: self.disposeBag)
+    }
 }
