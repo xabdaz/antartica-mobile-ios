@@ -52,7 +52,7 @@ class ListPostVC: SZViewController {
     }
 
     @IBAction func testPassingData(_ sender: Any) {
-        AppDelegate.container.register(ListPostViewData.self) { _ in ListPostViewData(id: "Hai") }
+//        AppDelegate.container.register(ListPostViewData.self) { _ in }
         self.viewModel.didDetail.onNext(())
     }
 }
@@ -80,6 +80,7 @@ extension ListPostVC: UITableViewDelegate {
         _ model: ListPostViewData
     ) -> ListPostCell {
         let cell = ListPostCell.dequeue(tableView: tableView, indexPath: indexPath)
+        cell.setContent(model: model)
         return cell
     }
 

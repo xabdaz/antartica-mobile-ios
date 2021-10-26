@@ -25,6 +25,8 @@ extension Container {
 
 extension Container {
     func registerServices() {
+        autoregister(HttpClient.self, initializer: HttpClientProduction.init)
+        autoregister(BackendRestClient.self, initializer: BackendRestClient.init)
         autoregister(SessionService.self, initializer: SessionService.init).inObjectScope(.container)
     }
 }

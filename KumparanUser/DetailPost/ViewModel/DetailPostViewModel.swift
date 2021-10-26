@@ -11,6 +11,6 @@ public class DetailPostViewModel: SZViewModel {
     let outTitle = BehaviorRelay<String>(value: "")
     public init(model: ListPostViewData) {
         super.init()
-        outTitle.accept(model.id)
+//        outTitle.accept(model.id)
     }
 }

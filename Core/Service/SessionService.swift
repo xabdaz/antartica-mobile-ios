@@ -7,4 +7,9 @@
 
 import Foundation
 public class SessionService {
+    
+    private let restClient: BackendRestClient
+    init(restClient: BackendRestClient) {
+        self.restClient = restClient
+    }
 }

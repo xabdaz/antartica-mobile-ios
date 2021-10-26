@@ -17,7 +17,7 @@ extension UserViewModel {
     func setupData() {
         var data: [UserViewData] = []
         for id in 0 ..< 30 {
-            data.append(UserViewData(name: "User \(id)"))
+            data.append(UserViewData(name: "User \(id+1)"))
         }
         self.outTableView.accept(data)
     }

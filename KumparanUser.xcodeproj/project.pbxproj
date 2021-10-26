@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2FD8472728045D00CEC67B /* PostRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2FD8462728045D00CEC67B /* PostRepository.swift */; };
 		9F9BD0402727080F002862EF /* SZCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD03F2727080F002862EF /* SZCollectionViewCell.swift */; };
 		9F9BD045272709C0002862EF /* GaleriImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD043272709C0002862EF /* GaleriImageCell.swift */; };
 		9F9BD046272709C0002862EF /* GaleriImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9BD044272709C0002862EF /* GaleriImageCell.xib */; };
@@ -17,6 +18,15 @@
 		9F9BD055272777E0002862EF /* UtilTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD054272777E0002862EF /* UtilTest.swift */; };
 		9F9BD05827277C7F002862EF /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD05627277C7E002862EF /* UserCell.swift */; };
 		9F9BD05927277C7F002862EF /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F9BD05727277C7F002862EF /* UserCell.xib */; };
+		9F9BD05D2727894D002862EF /* BackendRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD05C2727894D002862EF /* BackendRestClient.swift */; };
+		9F9BD05F272789F9002862EF /* SZModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD05E272789F8002862EF /* SZModel.swift */; };
+		9F9BD06127278FB4002862EF /* HttpClientProduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD06027278FB4002862EF /* HttpClientProduction.swift */; };
+		9F9BD06327279013002862EF /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD06227279013002862EF /* HttpMethod.swift */; };
+		9F9BD06527279049002862EF /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD06427279048002862EF /* ApiResponse.swift */; };
+		9F9BD067272793CE002862EF /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD066272793CE002862EF /* ApiRequest.swift */; };
+		9F9BD069272794D5002862EF /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD068272794D5002862EF /* ApiError.swift */; };
+		9F9BD06B2727954E002862EF /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD06A2727954E002862EF /* Data+Extension.swift */; };
+		9F9BD06D2727957F002862EF /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9BD06C2727957F002862EF /* Json.swift */; };
 		9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */; };
 		9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6BF2723ED4800231AC3 /* ViewController.swift */; };
 		9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FC0F6C42723ED4800231AC3 /* KumparanUser.xcdatamodeld */; };
@@ -61,6 +71,8 @@
 		9FF242B82725F36B005A6093 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242B72725F36B005A6093 /* UICollectionView+Extension.swift */; };
 		9FF242BA2725F78F005A6093 /* SizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242B92725F78F005A6093 /* SizeUtils.swift */; };
 		9FF242BC2725F97E005A6093 /* SZCollectionViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF242BB2725F97E005A6093 /* SZCollectionViewSection.swift */; };
+		9FFAA5CA2728546C00A1B3E8 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5C92728546C00A1B3E8 /* PostModel.swift */; };
+		9FFAA5CC2728671A00A1B3E8 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5CB2728671900A1B3E8 /* String+Extension.swift */; };
 		B6F26D56C50FCC308F8104E7 /* Pods_KumparanUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +96,7 @@
 /* Begin PBXFileReference section */
 		3247C093C554FB68C38976B4 /* Pods-KumparanUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumparanUser.debug.xcconfig"; path = "Target Support Files/Pods-KumparanUser/Pods-KumparanUser.debug.xcconfig"; sourceTree = "<group>"; };
 		360CB6BDC6B252956F3C9AE5 /* Pods-KumparanUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KumparanUser.release.xcconfig"; path = "Target Support Files/Pods-KumparanUser/Pods-KumparanUser.release.xcconfig"; sourceTree = "<group>"; };
+		9F2FD8462728045D00CEC67B /* PostRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRepository.swift; sourceTree = "<group>"; };
 		9F9BD03F2727080F002862EF /* SZCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZCollectionViewCell.swift; sourceTree = "<group>"; };
 		9F9BD043272709C0002862EF /* GaleriImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaleriImageCell.swift; sourceTree = "<group>"; };
 		9F9BD044272709C0002862EF /* GaleriImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GaleriImageCell.xib; sourceTree = "<group>"; };
@@ -94,6 +107,15 @@
 		9F9BD054272777E0002862EF /* UtilTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilTest.swift; sourceTree = "<group>"; };
 		9F9BD05627277C7E002862EF /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		9F9BD05727277C7F002862EF /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		9F9BD05C2727894D002862EF /* BackendRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendRestClient.swift; sourceTree = "<group>"; };
+		9F9BD05E272789F8002862EF /* SZModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZModel.swift; sourceTree = "<group>"; };
+		9F9BD06027278FB4002862EF /* HttpClientProduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientProduction.swift; sourceTree = "<group>"; };
+		9F9BD06227279013002862EF /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		9F9BD06427279048002862EF /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		9F9BD066272793CE002862EF /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		9F9BD068272794D5002862EF /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		9F9BD06A2727954E002862EF /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		9F9BD06C2727957F002862EF /* Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
 		9FC0F6B82723ED4800231AC3 /* KumparanUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumparanUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC0F6BB2723ED4800231AC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FC0F6BF2723ED4800231AC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +164,8 @@
 		9FF242B72725F36B005A6093 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		9FF242B92725F78F005A6093 /* SizeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeUtils.swift; sourceTree = "<group>"; };
 		9FF242BB2725F97E005A6093 /* SZCollectionViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SZCollectionViewSection.swift; sourceTree = "<group>"; };
+		9FFAA5C92728546C00A1B3E8 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		9FFAA5CB2728671900A1B3E8 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumparanUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,6 +210,14 @@
 				BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F2FD8452728044200CEC67B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9F2FD8462728045D00CEC67B /* PostRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		9F9BD03E272707DD002862EF /* Cell */ = {
@@ -252,6 +284,16 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		9F9BD05B272788CD002862EF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9F9BD05C2727894D002862EF /* BackendRestClient.swift */,
+				9F9BD06027278FB4002862EF /* HttpClientProduction.swift */,
+				9F9BD066272793CE002862EF /* ApiRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		9FC0F6AF2723ED4800231AC3 = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +353,9 @@
 		9FC0F6EE2723F13300231AC3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9FFAA5C82728546100A1B3E8 /* Model */,
+				9F2FD8452728044200CEC67B /* Repository */,
+				9F9BD05B272788CD002862EF /* Networking */,
 				9FF2429627255020005A6093 /* Component */,
 				9FF242742724525D005A6093 /* Extension */,
 				9FF24271272451AF005A6093 /* Utils */,
@@ -362,6 +407,10 @@
 				9FC0F6FB2723FC5A00231AC3 /* CoordiantorResult.swift */,
 				9FF2429B27255332005A6093 /* SZSectionSection.swift */,
 				9FF242BB2725F97E005A6093 /* SZCollectionViewSection.swift */,
+				9F9BD05E272789F8002862EF /* SZModel.swift */,
+				9F9BD06227279013002862EF /* HttpMethod.swift */,
+				9F9BD06427279048002862EF /* ApiResponse.swift */,
+				9F9BD068272794D5002862EF /* ApiError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -424,6 +473,7 @@
 			children = (
 				9FF24272272451C3005A6093 /* ViewControllerUtils.swift */,
 				9FF242B92725F78F005A6093 /* SizeUtils.swift */,
+				9F9BD06C2727957F002862EF /* Json.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -436,6 +486,8 @@
 				9FF242A327255F75005A6093 /* TableView+Extension.swift */,
 				9FF242B52725EFA6005A6093 /* UIView+Extension.swift */,
 				9FF242B72725F36B005A6093 /* UICollectionView+Extension.swift */,
+				9F9BD06A2727954E002862EF /* Data+Extension.swift */,
+				9FFAA5CB2728671900A1B3E8 /* String+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -588,6 +640,14 @@
 				9F9BD03F2727080F002862EF /* SZCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9FFAA5C82728546100A1B3E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA5C92728546C00A1B3E8 /* PostModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -792,19 +852,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FF2426D27244E18005A6093 /* AppCoordinator.swift in Sources */,
+				9F9BD06127278FB4002862EF /* HttpClientProduction.swift in Sources */,
 				9FF2429E27255BF8005A6093 /* SZTableViewCell.swift in Sources */,
 				9FF2426927243C68005A6093 /* ListPostViewModel.swift in Sources */,
+				9FFAA5CA2728546C00A1B3E8 /* PostModel.swift in Sources */,
+				9F9BD06327279013002862EF /* HttpMethod.swift in Sources */,
 				9FF24273272451C3005A6093 /* ViewControllerUtils.swift in Sources */,
 				9FF242BC2725F97E005A6093 /* SZCollectionViewSection.swift in Sources */,
 				9F9BD045272709C0002862EF /* GaleriImageCell.swift in Sources */,
 				9F9BD0402727080F002862EF /* SZCollectionViewCell.swift in Sources */,
 				9FF24299272550A9005A6093 /* SZTableView.swift in Sources */,
+				9F9BD067272793CE002862EF /* ApiRequest.swift in Sources */,
 				9F9BD05827277C7F002862EF /* UserCell.swift in Sources */,
+				9F2FD8472728045D00CEC67B /* PostRepository.swift in Sources */,
 				9FF2429C27255332005A6093 /* SZSectionSection.swift in Sources */,
 				9FF2426527243C39005A6093 /* ListPostVC.swift in Sources */,
+				9F9BD06D2727957F002862EF /* Json.swift in Sources */,
 				9F9BD052272727F1002862EF /* UserVC.swift in Sources */,
 				9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */,
 				9FF242AC27257857005A6093 /* GaleriPostViewModel.swift in Sources */,
+				9F9BD06B2727954E002862EF /* Data+Extension.swift in Sources */,
 				9FC0F6C02723ED4800231AC3 /* ViewController.swift in Sources */,
 				9F9BD04F272727D2002862EF /* UserViewModel.swift in Sources */,
 				9F9BD04D272727C6002862EF /* UserViewData.swift in Sources */,
@@ -816,12 +883,17 @@
 				9FF2427E27251AFB005A6093 /* TabCoordinator.swift in Sources */,
 				9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */,
 				9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */,
+				9FFAA5CC2728671A00A1B3E8 /* String+Extension.swift in Sources */,
 				9FF242B62725EFA6005A6093 /* UIView+Extension.swift in Sources */,
 				9FF242A127255C99005A6093 /* ListPostCell.swift in Sources */,
+				9F9BD05D2727894D002862EF /* BackendRestClient.swift in Sources */,
 				9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */,
 				9FF242A427255F75005A6093 /* TableView+Extension.swift in Sources */,
+				9F9BD05F272789F9002862EF /* SZModel.swift in Sources */,
+				9F9BD06527279049002862EF /* ApiResponse.swift in Sources */,
 				9FF242B427257BBA005A6093 /* SZCollectionView.swift in Sources */,
 				9FF2428F27253BFB005A6093 /* DetailPostCoordinator.swift in Sources */,
+				9F9BD069272794D5002862EF /* ApiError.swift in Sources */,
 				9FF2428227251BAA005A6093 /* TabBarVC.swift in Sources */,
 				9FF242BA2725F78F005A6093 /* SizeUtils.swift in Sources */,
 				9FC0F6F42723F84500231AC3 /* SZCoordinator.swift in Sources */,
@@ -1017,7 +1089,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.xabdaz.squadzone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1048,7 +1120,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.xabdaz.squadzone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

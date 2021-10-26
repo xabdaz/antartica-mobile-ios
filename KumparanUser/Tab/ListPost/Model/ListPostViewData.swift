@@ -7,8 +7,22 @@
 
 import Foundation
 public struct ListPostViewData: Codable {
-    let id: String
-    init(id: String) {
-        self.id = id
+    let model: PostModel
+    public init(model: PostModel) {
+        self.model = model
+    }
+}
+
+extension ListPostViewData {
+    var title: String? {
+        return model.title
+    }
+
+    var description: String? {
+        return model.body
+    }
+
+    var user: String? {
+        return "User"
     }
 }
