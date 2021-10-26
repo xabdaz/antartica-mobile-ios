@@ -20,6 +20,7 @@ extension Container {
         autoregister(AppCoordinator.self, initializer: AppCoordinator.init)
         autoregister(TabCoordinator.self, initializer: TabCoordinator.init)
         autoregister(DetailPostCoordinator.self, initializer: DetailPostCoordinator.init)
+        autoregister(LaunchCoordinator.self, initializer: LaunchCoordinator.init)
     }
 }
 
@@ -28,6 +29,7 @@ extension Container {
         autoregister(HttpClient.self, initializer: HttpClientProduction.init)
         autoregister(BackendRestClient.self, initializer: BackendRestClient.init)
         autoregister(SessionService.self, initializer: SessionService.init).inObjectScope(.container)
+        autoregister(DataManager.self, initializer: UserDataManager.init)
     }
 }
 
@@ -38,5 +40,6 @@ extension Container {
         autoregister(DetailPostViewModel.self, initializer: DetailPostViewModel.init)
         autoregister(GaleriPostViewModel.self, initializer: GaleriPostViewModel.init)
         autoregister(UserViewModel.self, initializer: UserViewModel.init)
+        autoregister(LaunchViewModel.self, initializer: LaunchViewModel.init)
     }
 }

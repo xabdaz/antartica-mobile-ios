@@ -46,7 +46,9 @@ public class ListPostViewModel: SZViewModel {
         return Single<[ListPostViewData]>.create { [weak self] single in
             guard let `self` = self else { return Disposables.create() }
             let items = model.map { item -> ListPostViewData in
-                return ListPostViewData(model: item)
+                let userItem = self.session.users ?? []
+                let data = ListPostViewData(model: item, user: userItem)
+                return data
             }
             single(.success(items))
             return Disposables.create()

@@ -9,16 +9,17 @@ import RxSwift
 import RxCocoa
 public class UserViewModel: SZViewModel {
     let outTableView = BehaviorRelay<[UserViewData]>(value: [])
-    public override init() {
+    private let session: SessionService
+    public init(session: SessionService) {
+        self.session = session
         super.init()
     }
 }
 extension UserViewModel {
     func setupData() {
-        var data: [UserViewData] = []
-        for id in 0 ..< 30 {
-            data.append(UserViewData(name: "User \(id+1)"))
+        if let users = self.session.users {
+            let users = users.map { UserViewData(model: $0) }
+            self.outTableView.accept(users)
         }
-        self.outTableView.accept(data)
     }
 }

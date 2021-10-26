@@ -23,6 +23,7 @@ class ListPostCell: SZTableViewCell {
     func setContent(model: ListPostViewData) {
         self.titleLabel.text = model.title
         self.descriptionLabel.text = model.description
+        self.userLabel.text = model.user
     }
     
 }

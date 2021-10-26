@@ -12,4 +12,10 @@ public enum PostRepository {
             super.init(resource: "/posts", useSZModel: false)
         }
     }
+    
+    public class User: ApiRequest<[UserModel]> {
+        init() {
+            super.init(resource: "/users", useSZModel: false)
+        }
+    }
 }
