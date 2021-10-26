@@ -16,12 +16,15 @@ public class ListPostViewModel: SZViewModel {
     typealias SectionData = SZSectionSection<ListPostViewData>
     let outTabelData = BehaviorRelay<[SectionModel<String, SectionData>]>(value: [])
 
+    let inTableSelected = PublishSubject<SectionData>()
+
     private let restClient: BackendRestClient
     private let session: SessionService
     public init(restClient: BackendRestClient, session: SessionService) {
         self.restClient = restClient
         self.session = session
         super.init()
+        self.setupInputBindings()
     }
 
     func loadData() {
@@ -30,8 +33,9 @@ public class ListPostViewModel: SZViewModel {
                 guard let `self` = self else { return .never() }
                 return self.mapping(model: model)
             }.subscribe {[weak self] model in
-                self?.handleModel(model: model)
-            } onError: { [weak self] error in
+                guard let `self` = self else { return }
+                self.handleModel(model: model)
+            } onError: { error in
                 print(error)
             }.disposed(by: self.disposeBag)
     }
@@ -53,5 +57,18 @@ public class ListPostViewModel: SZViewModel {
             single(.success(items))
             return Disposables.create()
         }
+    }
+}
+
+extension ListPostViewModel {
+    func setupInputBindings() {
+        self.inTableSelected
+            .bind { item in
+                switch item {
+                case let .item(model, identifier: _):
+                    AppDelegate.container.register(ListPostViewData.self) { _ in model}
+                default: break
+                }
+            }.disposed(by: self.disposeBag)
     }
 }

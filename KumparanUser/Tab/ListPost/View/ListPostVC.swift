@@ -44,11 +44,11 @@ class ListPostVC: SZViewController {
 
         self.setupUI()
         self.setupOutPutBindings()
+        self.setupInputBindings()
+        self.viewModel.loadData()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        self.viewModel.loadData()
     }
 
     @IBAction func testPassingData(_ sender: Any) {
@@ -68,6 +68,12 @@ extension ListPostVC {
     func setupOutPutBindings() {
         self.viewModel.outTabelData
             .bind(to: self.tableView.rx.items(dataSource: self.dataSource))
+            .disposed(by: self.disposeBag)
+    }
+
+    func setupInputBindings() {
+        self.tableView.rx.modelSelected(TableData.self)
+            .bind(to: self.viewModel.inTableSelected)
             .disposed(by: self.disposeBag)
     }
 }

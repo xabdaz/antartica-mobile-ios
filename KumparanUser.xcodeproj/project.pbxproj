@@ -93,6 +93,9 @@
 		9FFAA5F927288DF500A1B3E8 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAA5F727288DF500A1B3E8 /* ImageCell.xib */; };
 		9FFAA5FB27289F1600A1B3E8 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5FA27289F1600A1B3E8 /* ImageViewModel.swift */; };
 		9FFAA5FD27289FDB00A1B3E8 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5FC27289FDB00A1B3E8 /* PhotoModel.swift */; };
+		9FFAA5FF2728B25B00A1B3E8 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5FE2728B25B00A1B3E8 /* CommentModel.swift */; };
+		9FFAA6022728B4D200A1B3E8 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA6002728B4D200A1B3E8 /* CommentCell.swift */; };
+		9FFAA6032728B4D200A1B3E8 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAA6012728B4D200A1B3E8 /* CommentCell.xib */; };
 		B6F26D56C50FCC308F8104E7 /* Pods_KumparanUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -206,6 +209,9 @@
 		9FFAA5F727288DF500A1B3E8 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 		9FFAA5FA27289F1600A1B3E8 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		9FFAA5FC27289FDB00A1B3E8 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		9FFAA5FE2728B25B00A1B3E8 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		9FFAA6002728B4D200A1B3E8 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		9FFAA6012728B4D200A1B3E8 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumparanUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -601,6 +607,8 @@
 			children = (
 				9FF2429227254395005A6093 /* DetailPostVC.swift */,
 				9FF2429327254395005A6093 /* DetailPostVC.xib */,
+				9FFAA6002728B4D200A1B3E8 /* CommentCell.swift */,
+				9FFAA6012728B4D200A1B3E8 /* CommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -703,6 +711,7 @@
 				9FFAA5D92728714200A1B3E8 /* SettingKey.swift */,
 				9FFAA5F2272889EA00A1B3E8 /* AlbumModel.swift */,
 				9FFAA5FC27289FDB00A1B3E8 /* PhotoModel.swift */,
+				9FFAA5FE2728B25B00A1B3E8 /* CommentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -878,6 +887,7 @@
 				9FF242A227255C99005A6093 /* ListPostCell.xib in Resources */,
 				9FF2428327251BAA005A6093 /* TabBarVC.xib in Resources */,
 				9FC0F6C82723ED4C00231AC3 /* Assets.xcassets in Resources */,
+				9FFAA6032728B4D200A1B3E8 /* CommentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1000,6 +1010,7 @@
 				9FF242B82725F36B005A6093 /* UICollectionView+Extension.swift in Sources */,
 				9FFAA5D427286FBA00A1B3E8 /* UserDataManager.swift in Sources */,
 				9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */,
+				9FFAA6022728B4D200A1B3E8 /* CommentCell.swift in Sources */,
 				9FF2427027244F3D005A6093 /* SessionService.swift in Sources */,
 				9FF24276272452BA005A6093 /* Containter+Extension.swift in Sources */,
 				9FF2427E27251AFB005A6093 /* TabCoordinator.swift in Sources */,
@@ -1029,6 +1040,7 @@
 				9FF242AA272577BC005A6093 /* GalerPostViewData.swift in Sources */,
 				9FF2429127253C5D005A6093 /* DetailPostViewModel.swift in Sources */,
 				9FF242AF272578F5005A6093 /* GaleriPostVC.swift in Sources */,
+				9FFAA5FF2728B25B00A1B3E8 /* CommentModel.swift in Sources */,
 				9FF2426B27243D00005A6093 /* ListPostViewData.swift in Sources */,
 				9FFAA5CE27286D4C00A1B3E8 /* UserModel.swift in Sources */,
 			);

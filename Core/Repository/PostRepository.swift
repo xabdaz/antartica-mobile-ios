@@ -30,4 +30,10 @@ public enum PostRepository {
             super.init(resource: "/photos?albumId=\(albumId)", useSZModel: false)
         }
     }
+
+    public class Comment: ApiRequest<[CommentModel]> {
+        init(postId: Int) {
+            super.init(resource: "/posts/\(postId)/comments", useSZModel: false)
+        }
+    }
 }

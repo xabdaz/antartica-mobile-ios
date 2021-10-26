@@ -36,8 +36,8 @@ public class TabCoordinator: SZCoordinator {
         let viewControllers = [self.getPostViewController(), self.getGaleriViewController(), self.getUserViewController()]
         self.viewModel.didViewController.accept(viewControllers)
 
-        self.postViewModel.didDetail
-            .bind { [weak self] in
+        self.postViewModel.inTableSelected
+            .bind { [weak self] _ in
                 self?.navigateToDetail()
             }.disposed(by: self.disposeBag)
     }
