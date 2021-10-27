@@ -40,6 +40,11 @@ public class TabCoordinator: SZCoordinator {
             .bind { [weak self] _ in
                 self?.navigateToDetail()
             }.disposed(by: self.disposeBag)
+
+        self.galeriViewModel.inImageData
+            .bind { [weak self] _ in
+                self?.navigateToImagePreview()
+            }.disposed(by: self.disposeBag)
     }
 }
 
@@ -75,6 +80,12 @@ private extension TabCoordinator {
 extension TabCoordinator {
     public func navigateToDetail() {
         let coordinator = AppDelegate.container.resolve(DetailPostCoordinator.self)
+        coordinator?.navigationController = self.navigation
+        self.start(coordinator: coordinator)
+    }
+
+    private func navigateToImagePreview() {
+        let coordinator = AppDelegate.container.resolve(ImageViewCoordiantor.self)
         coordinator?.navigationController = self.navigation
         self.start(coordinator: coordinator)
     }

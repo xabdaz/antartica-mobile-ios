@@ -31,6 +31,9 @@ public class GaleriPostVC: SZViewController {
         self.setupOutputBindings()
         self.viewModel.setupData()
     }
+    public override func onFinishCoordinator() {
+        self.viewModel.didFinishCoordinator.onNext(())
+    }
 
 }
 extension GaleriPostVC {
@@ -41,8 +44,12 @@ extension GaleriPostVC {
         self.viewModel.outTableView
             .bind(to: self.tableView.rx.items(
                 cellIdentifier: AlbumCell.identifier, cellType: AlbumCell.self
-            )) { _, model, cell in
+            )) { [weak self] _, model, cell in
                 cell.setContent(model: model)
+                guard let `self` = self else { return }
+                cell.didImage
+                    .bind(to: self.viewModel.inImageData)
+                    .disposed(by: cell.disposeBag)
             }.disposed(by: self.disposeBag)
     }
 }

@@ -29,6 +29,9 @@ public class UserVC: SZViewController {
         self.viewModel.setupData()
     }
 
+    public override func onFinishCoordinator() {
+        self.viewModel.didFinishCoordinator.onNext(())
+    }
 }
 extension UserVC {
     func setupUI() {

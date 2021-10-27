@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+
 public protocol Coordinator: AnyObject {
     dynamic  var navigationController: UINavigationController { get set }
     dynamic var parentCoordinator: Coordinator? { get set }
@@ -80,5 +83,11 @@ public extension SZCoordinator {
             return self.navigationController
         }
         return navigation
+    }
+
+    var didFinish: Binder<Void> {
+        return Binder(self) { `self`, _ in
+             self.parentCoordinator?.didFinish(coordinator: self)
+        }
     }
 }

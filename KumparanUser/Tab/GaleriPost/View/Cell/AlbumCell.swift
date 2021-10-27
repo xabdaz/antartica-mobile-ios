@@ -11,7 +11,8 @@ import RxSwift
 class AlbumCell: SZTableViewCell {
 
     private let viewModel = AppDelegate.container.resolve(AlbumViewModel.self)
-    private let disposeBag = DisposeBag()
+    let disposeBag = DisposeBag()
+    let didImage = PublishSubject<ImageViewData>()
     
     @IBOutlet var heightTableView: NSLayoutConstraint!
     @IBOutlet var tableView: SZTableView!
@@ -57,8 +58,12 @@ private extension AlbumCell {
         viewmodel.outTableView
             .bind(to: self.tableView.rx.items(
                 cellIdentifier: ImageCell.identifier, cellType: ImageCell.self
-            )) { _, model, cell in
+            )) { [weak self] _, model, cell in
                 cell.setContent(model: model)
+                guard let `self` = self else { return }
+                cell.didImage
+                    .bind(to: self.didImage)
+                    .disposed(by: cell.disposeBag)
             }.disposed(by: self.disposeBag)
     }
 }

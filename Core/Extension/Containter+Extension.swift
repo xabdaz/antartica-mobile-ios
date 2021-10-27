@@ -30,6 +30,8 @@ extension Container {
         autoregister(BackendRestClient.self, initializer: BackendRestClient.init)
         autoregister(SessionService.self, initializer: SessionService.init).inObjectScope(.container)
         autoregister(DataManager.self, initializer: UserDataManager.init)
+        autoregister(DetailUserCoordinator.self, initializer: DetailUserCoordinator.init)
+        autoregister(ImageViewCoordiantor.self, initializer: ImageViewCoordiantor.init)
     }
 }
 
@@ -43,5 +45,7 @@ extension Container {
         autoregister(LaunchViewModel.self, initializer: LaunchViewModel.init)
         autoregister(AlbumViewModel.self, initializer: AlbumViewModel.init)
         autoregister(ImageViewModel.self, initializer: ImageViewModel.init)
+        autoregister(DetailUserViewModel.self, initializer: DetailUserViewModel.init)
+        autoregister(ImageViewViewModel.self, initializer: ImageViewViewModel.init)
     }
 }

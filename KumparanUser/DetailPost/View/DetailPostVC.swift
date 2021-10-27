@@ -35,6 +35,11 @@ public class DetailPostVC: SZViewController {
         // Do any additional setup after loading the view.
     }
 
+    public override func onFinishCoordinator() {
+        
+        self.viewModel.didFinishCoordinator.onNext(())
+    }
+
 }
 extension DetailPostVC {
     func setupUI() {
@@ -43,6 +48,9 @@ extension DetailPostVC {
     }
 
     func setupInputBindings() {
+        self.tableView.rx.modelSelected(CommentModel.self)
+            .bind(to: self.viewModel.inTableSelected)
+            .disposed(by: self.disposeBag)
     }
 
     func setupOutputBindings() {
@@ -65,4 +73,5 @@ extension DetailPostVC {
                 cell.setContent(model: model)
             }.disposed(by: self.disposeBag)
     }
+   
 }

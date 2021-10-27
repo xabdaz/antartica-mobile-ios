@@ -1,24 +1,23 @@
 //
-//  LaunchCoordinator.swift
+//  ImageViewCoordinator.swift
 //  KumparanUser
 //
 //  Created by Developer Xabdaz on 27/10/21.
 //
 
-import UIKit
 import RxSwift
 
-public class LaunchCoordinator: SZCoordinator {
+
+public class ImageViewCoordiantor: SZCoordinator {
     private let disposeBag = DisposeBag()
-    private let viewModel: LaunchViewModel
-    public init(viewModel: LaunchViewModel) {
+    private let viewModel: ImageViewViewModel
+    public init(viewModel: ImageViewViewModel) {
         self.viewModel = viewModel
     }
 
     public override func start() {
-        
-        let viewController = LaunchVC(viewModel: self.viewModel)
-        navigation.viewControllers = [viewController]
+        let viewController = ImageViewVC(viewModel: self.viewModel)
+        self.navigation.pushViewController(viewController, animated: true)
     }
     public override func setupBinding() {
         self.viewModel.didFinishCoordinator

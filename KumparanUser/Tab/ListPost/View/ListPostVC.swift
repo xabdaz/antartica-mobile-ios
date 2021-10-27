@@ -55,6 +55,9 @@ class ListPostVC: SZViewController {
 //        AppDelegate.container.register(ListPostViewData.self) { _ in }
         self.viewModel.didDetail.onNext(())
     }
+    override func onFinishCoordinator() {
+        self.viewModel.didFinishCoordinator.onNext(())
+    }
 }
 extension ListPostVC {
     func setupUI() {

@@ -96,6 +96,16 @@
 		9FFAA5FF2728B25B00A1B3E8 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA5FE2728B25B00A1B3E8 /* CommentModel.swift */; };
 		9FFAA6022728B4D200A1B3E8 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA6002728B4D200A1B3E8 /* CommentCell.swift */; };
 		9FFAA6032728B4D200A1B3E8 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAA6012728B4D200A1B3E8 /* CommentCell.xib */; };
+		9FFAA60B2728B99100A1B3E8 /* DetailUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA6092728B99100A1B3E8 /* DetailUserVC.swift */; };
+		9FFAA60C2728B99100A1B3E8 /* DetailUserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAA60A2728B99100A1B3E8 /* DetailUserVC.xib */; };
+		9FFAA60E2728B9A800A1B3E8 /* DetailUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA60D2728B9A800A1B3E8 /* DetailUserViewModel.swift */; };
+		9FFAA6102728B9B400A1B3E8 /* DetailUserViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA60F2728B9B400A1B3E8 /* DetailUserViewData.swift */; };
+		9FFAA6122728B9C100A1B3E8 /* DetailUserCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA6112728B9C100A1B3E8 /* DetailUserCoordinator.swift */; };
+		9FFAA61A2728C23500A1B3E8 /* ImageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA6182728C23500A1B3E8 /* ImageViewVC.swift */; };
+		9FFAA61B2728C23500A1B3E8 /* ImageViewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FFAA6192728C23500A1B3E8 /* ImageViewVC.xib */; };
+		9FFAA61D2728C24600A1B3E8 /* ImageViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA61C2728C24500A1B3E8 /* ImageViewViewModel.swift */; };
+		9FFAA61F2728C27E00A1B3E8 /* ImageViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA61E2728C27E00A1B3E8 /* ImageViewData.swift */; };
+		9FFAA6212728C2A300A1B3E8 /* ImageViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFAA6202728C2A300A1B3E8 /* ImageViewCoordinator.swift */; };
 		B6F26D56C50FCC308F8104E7 /* Pods_KumparanUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */; };
 /* End PBXBuildFile section */
 
@@ -212,6 +222,16 @@
 		9FFAA5FE2728B25B00A1B3E8 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		9FFAA6002728B4D200A1B3E8 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		9FFAA6012728B4D200A1B3E8 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		9FFAA6092728B99100A1B3E8 /* DetailUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserVC.swift; sourceTree = "<group>"; };
+		9FFAA60A2728B99100A1B3E8 /* DetailUserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailUserVC.xib; sourceTree = "<group>"; };
+		9FFAA60D2728B9A800A1B3E8 /* DetailUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserViewModel.swift; sourceTree = "<group>"; };
+		9FFAA60F2728B9B400A1B3E8 /* DetailUserViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserViewData.swift; sourceTree = "<group>"; };
+		9FFAA6112728B9C100A1B3E8 /* DetailUserCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserCoordinator.swift; sourceTree = "<group>"; };
+		9FFAA6182728C23500A1B3E8 /* ImageViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewVC.swift; sourceTree = "<group>"; };
+		9FFAA6192728C23500A1B3E8 /* ImageViewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageViewVC.xib; sourceTree = "<group>"; };
+		9FFAA61C2728C24500A1B3E8 /* ImageViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewViewModel.swift; sourceTree = "<group>"; };
+		9FFAA61E2728C27E00A1B3E8 /* ImageViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewData.swift; sourceTree = "<group>"; };
+		9FFAA6202728C2A300A1B3E8 /* ImageViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCoordinator.swift; sourceTree = "<group>"; };
 		BDC5C859AFA75C88D4357F87 /* Pods_KumparanUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KumparanUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -370,6 +390,8 @@
 		9FC0F6BA2723ED4800231AC3 /* KumparanUser */ = {
 			isa = PBXGroup;
 			children = (
+				9FFAA6132728C1BA00A1B3E8 /* ImageView */,
+				9FFAA6042728B92800A1B3E8 /* DetailUser */,
 				9FFAA5DB272876A200A1B3E8 /* Launch */,
 				9FF2428A27253B4E005A6093 /* DetailPost */,
 				9FF2427B27251AC2005A6093 /* Tab */,
@@ -767,6 +789,94 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		9FFAA6042728B92800A1B3E8 /* DetailUser */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA6082728B97600A1B3E8 /* View */,
+				9FFAA6072728B96900A1B3E8 /* ViewModel */,
+				9FFAA6062728B96300A1B3E8 /* Model */,
+				9FFAA6052728B95B00A1B3E8 /* Coordinator */,
+			);
+			path = DetailUser;
+			sourceTree = "<group>";
+		};
+		9FFAA6052728B95B00A1B3E8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA6112728B9C100A1B3E8 /* DetailUserCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9FFAA6062728B96300A1B3E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA60F2728B9B400A1B3E8 /* DetailUserViewData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FFAA6072728B96900A1B3E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA60D2728B9A800A1B3E8 /* DetailUserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9FFAA6082728B97600A1B3E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA6092728B99100A1B3E8 /* DetailUserVC.swift */,
+				9FFAA60A2728B99100A1B3E8 /* DetailUserVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9FFAA6132728C1BA00A1B3E8 /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA6172728C22100A1B3E8 /* View */,
+				9FFAA6162728C21800A1B3E8 /* ViewModel */,
+				9FFAA6152728C21100A1B3E8 /* Model */,
+				9FFAA6142728C1DC00A1B3E8 /* Coordinator */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		9FFAA6142728C1DC00A1B3E8 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA6202728C2A300A1B3E8 /* ImageViewCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9FFAA6152728C21100A1B3E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA61E2728C27E00A1B3E8 /* ImageViewData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FFAA6162728C21800A1B3E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA61C2728C24500A1B3E8 /* ImageViewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9FFAA6172728C22100A1B3E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FFAA6182728C23500A1B3E8 /* ImageViewVC.swift */,
+				9FFAA6192728C23500A1B3E8 /* ImageViewVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -874,12 +984,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFAA60C2728B99100A1B3E8 /* DetailUserVC.xib in Resources */,
 				9FFAA5F927288DF500A1B3E8 /* ImageCell.xib in Resources */,
 				9FF2429527254395005A6093 /* DetailPostVC.xib in Resources */,
 				9FFAA5E72728774300A1B3E8 /* LaunchVC.xib in Resources */,
 				9FC0F6CB2723ED4C00231AC3 /* LaunchScreen.storyboard in Resources */,
 				9FF242B0272578F5005A6093 /* GaleriPostVC.xib in Resources */,
 				9F9BD046272709C0002862EF /* GaleriImageCell.xib in Resources */,
+				9FFAA61B2728C23500A1B3E8 /* ImageViewVC.xib in Resources */,
 				9F9BD05927277C7F002862EF /* UserCell.xib in Resources */,
 				9FF2426627243C39005A6093 /* ListPostVC.xib in Resources */,
 				9FFAA5EF2728856100A1B3E8 /* AlbumCell.xib in Resources */,
@@ -973,10 +1085,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FF2426D27244E18005A6093 /* AppCoordinator.swift in Sources */,
+				9FFAA6122728B9C100A1B3E8 /* DetailUserCoordinator.swift in Sources */,
 				9F9BD06127278FB4002862EF /* HttpClientProduction.swift in Sources */,
 				9FF2429E27255BF8005A6093 /* SZTableViewCell.swift in Sources */,
 				9FF2426927243C68005A6093 /* ListPostViewModel.swift in Sources */,
 				9FFAA5DA2728714200A1B3E8 /* SettingKey.swift in Sources */,
+				9FFAA61F2728C27E00A1B3E8 /* ImageViewData.swift in Sources */,
 				9FFAA5E9272877BF00A1B3E8 /* LaunchCoordinator.swift in Sources */,
 				9FFAA5F827288DF500A1B3E8 /* ImageCell.swift in Sources */,
 				9FFAA5CA2728546C00A1B3E8 /* PostModel.swift in Sources */,
@@ -986,6 +1100,7 @@
 				9F9BD045272709C0002862EF /* GaleriImageCell.swift in Sources */,
 				9F9BD0402727080F002862EF /* SZCollectionViewCell.swift in Sources */,
 				9FF24299272550A9005A6093 /* SZTableView.swift in Sources */,
+				9FFAA61A2728C23500A1B3E8 /* ImageViewVC.swift in Sources */,
 				9F9BD067272793CE002862EF /* ApiRequest.swift in Sources */,
 				9F9BD05827277C7F002862EF /* UserCell.swift in Sources */,
 				9F2FD8472728045D00CEC67B /* PostRepository.swift in Sources */,
@@ -996,6 +1111,7 @@
 				9F9BD06D2727957F002862EF /* Json.swift in Sources */,
 				9FFAA5D62728701500A1B3E8 /* Encodable+Extension.swift in Sources */,
 				9F9BD052272727F1002862EF /* UserVC.swift in Sources */,
+				9FFAA60B2728B99100A1B3E8 /* DetailUserVC.swift in Sources */,
 				9FFAA5D82728705300A1B3E8 /* Logger.swift in Sources */,
 				9FC0F6F62723F85900231AC3 /* SZViewController.swift in Sources */,
 				9FFAA5E12728771900A1B3E8 /* LaunchViewModel.swift in Sources */,
@@ -1009,12 +1125,15 @@
 				9FFAA5D027286F4C00A1B3E8 /* DataManager.swift in Sources */,
 				9FF242B82725F36B005A6093 /* UICollectionView+Extension.swift in Sources */,
 				9FFAA5D427286FBA00A1B3E8 /* UserDataManager.swift in Sources */,
+				9FFAA60E2728B9A800A1B3E8 /* DetailUserViewModel.swift in Sources */,
 				9FC0F6FC2723FC5A00231AC3 /* CoordiantorResult.swift in Sources */,
+				9FFAA61D2728C24600A1B3E8 /* ImageViewViewModel.swift in Sources */,
 				9FFAA6022728B4D200A1B3E8 /* CommentCell.swift in Sources */,
 				9FF2427027244F3D005A6093 /* SessionService.swift in Sources */,
 				9FF24276272452BA005A6093 /* Containter+Extension.swift in Sources */,
 				9FF2427E27251AFB005A6093 /* TabCoordinator.swift in Sources */,
 				9FC0F6BC2723ED4800231AC3 /* AppDelegate.swift in Sources */,
+				9FFAA6212728C2A300A1B3E8 /* ImageViewCoordinator.swift in Sources */,
 				9FFAA5F3272889EA00A1B3E8 /* AlbumModel.swift in Sources */,
 				9FFAA5EB27287B4400A1B3E8 /* Reactive+Extension.swift in Sources */,
 				9FC0F6F82723F86E00231AC3 /* SZViewModel.swift in Sources */,
@@ -1022,6 +1141,7 @@
 				9FF242B62725EFA6005A6093 /* UIView+Extension.swift in Sources */,
 				9FFAA5FB27289F1600A1B3E8 /* ImageViewModel.swift in Sources */,
 				9FF242A127255C99005A6093 /* ListPostCell.swift in Sources */,
+				9FFAA6102728B9B400A1B3E8 /* DetailUserViewData.swift in Sources */,
 				9FFAA5F1272888DD00A1B3E8 /* AlbumViewModel.swift in Sources */,
 				9F9BD05D2727894D002862EF /* BackendRestClient.swift in Sources */,
 				9FC0F6C62723ED4800231AC3 /* KumparanUser.xcdatamodeld in Sources */,
@@ -1215,7 +1335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = QNT26F7HW2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KumparanUser/Info.plist;
@@ -1246,7 +1366,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = QNT26F7HW2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = KumparanUser/Info.plist;

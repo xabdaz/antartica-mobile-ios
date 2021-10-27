@@ -10,8 +10,9 @@ import RxSwift
 import Kingfisher
 
 class ImageCell: SZTableViewCell {
-    
-    private let disposeBag = DisposeBag()
+    let didImage = PublishSubject<ImageViewData>()
+
+    let disposeBag = DisposeBag()
     private let viewModel = AppDelegate.container.resolve(ImageViewModel.self)
 
     @IBOutlet var titleLabel: UILabel!
@@ -87,6 +88,9 @@ extension ImageCell: SZCollectionViewDelegate {
         _ didSelectItemAtcollectionView: UICollectionView,
         object: Any
     ) {
+        if let model = object as? PhotoModel {
+            self.didImage.onNext(ImageViewData(title: model.title.orEmpty, url: model.url.orEmpty))
+        }
     }
     
     

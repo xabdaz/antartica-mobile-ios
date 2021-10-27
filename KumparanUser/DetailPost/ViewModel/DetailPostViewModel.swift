@@ -15,6 +15,8 @@ public class DetailPostViewModel: SZViewModel {
     let outDescription = BehaviorRelay<String?>(value: nil)
     let outUser = BehaviorRelay<String?>(value: nil)
     let outTable = BehaviorRelay<[CommentModel]>(value: [])
+
+    let inTableSelected = PublishSubject<CommentModel>()
     private let restClient: BackendRestClient
     let id: Int
     public init(model: ListPostViewData, restClient: BackendRestClient) {
@@ -37,3 +39,13 @@ public class DetailPostViewModel: SZViewModel {
     }
 }
 
+extension DetailPostViewModel {
+    private func setupBinding() {
+        self.inTableSelected
+            .bind { model in
+                AppDelegate.container.autoregister(DetailUserViewData.self) { _ in
+                    DetailUserViewData(id: model.id ?? 0)
+                }
+            }.disposed(by: self.disposeBag)
+    }
+}
