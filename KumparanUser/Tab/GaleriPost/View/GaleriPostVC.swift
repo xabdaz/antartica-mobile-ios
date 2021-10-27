@@ -49,7 +49,7 @@ extension GaleriPostVC {
                 guard let `self` = self else { return }
                 cell.didImage
                     .bind(to: self.viewModel.inImageData)
-                    .disposed(by: cell.disposeBag)
+                    .disposed(by: cell.disposeBag2)
             }.disposed(by: self.disposeBag)
     }
 }

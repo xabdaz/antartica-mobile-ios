@@ -12,6 +12,7 @@ class AlbumCell: SZTableViewCell {
 
     private let viewModel = AppDelegate.container.resolve(AlbumViewModel.self)
     let disposeBag = DisposeBag()
+    var disposeBag2 = DisposeBag()
     let didImage = PublishSubject<ImageViewData>()
     
     @IBOutlet var heightTableView: NSLayoutConstraint!
@@ -29,6 +30,9 @@ class AlbumCell: SZTableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+    }
+    override func prepareForReuse() {
+        self.disposeBag2 = DisposeBag()
     }
 
     func setContent(model: UserViewData) {
