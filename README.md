@@ -7,5 +7,5 @@ Available On TestFlight!
     <img alt="Download on the App Store" title="App Store" src="http://i.imgur.com/0n2zqHD.png" width="140">
   </a>
 </p>
-# Type Code
-Typi Code is a simple app that provide random data user, photo and album provided by ```https://jsonplaceholder.typicode.com/```
+<h1> Type Code </h1>
+Typi Code is a simple app that provide random data user, photo and album provided by https://jsonplaceholder.typicode.com/
