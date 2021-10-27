@@ -4,7 +4,7 @@ Available On TestFlight!
 
 <p align="center">
   <a href="https://testflight.apple.com/join/qusWSvSg">
-    <img alt="Download on the App Store" title="App Store" src="https://imgur.com/a/Hi3Ar45" width="140">
+    <img alt="Download on the App Store" title="App Store" src="https://imgur.com/a/Hi3Ar45.png" width="140">
   </a>
 </p>
 <h1> Type Code </h1>
