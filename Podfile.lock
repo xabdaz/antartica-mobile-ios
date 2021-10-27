@@ -1,8 +1,14 @@
 PODS:
+  - Differentiator (4.0.1)
   - FittedSheets (1.4.6)
+  - Kingfisher (4.10.1)
   - RxCocoa (5.1.3):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
   - RxRelay (5.1.3):
     - RxSwift (~> 5)
   - RxSwift (5.1.3)
@@ -13,7 +19,9 @@ PODS:
 
 DEPENDENCIES:
   - FittedSheets (~> 1.4.6)
+  - Kingfisher
   - RxCocoa (~> 5)
+  - RxDataSources (~> 4.0)
   - RxSwift (~> 5)
   - SwiftLint
   - Swinject
@@ -21,6 +29,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Differentiator
+    - Kingfisher
+    - RxDataSources
     - Swinject
     - SwinjectAutoregistration
   trunk:
@@ -31,14 +42,17 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
   FittedSheets: 7f37fee2567d15dcde391f31eccbffb660ddebf0
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
   SwiftLint: e96c0a8c770c7ebbc4d36c55baf9096bb65c4584
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
   SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
 
-PODFILE CHECKSUM: 7548759796a777cce67bcb65dd1e0636b72371b2
+PODFILE CHECKSUM: a9ca760401c4806312f9569ac46db21a7c789bd4
 
 COCOAPODS: 1.11.2
